@@ -598,16 +598,16 @@ Terraform will perform the following actions:
 
   # virtualbox_vm.vm1 will be created
   + resource "virtualbox_vm" "vm1" {
-      + cpus   = 1
+      + cpus   = 2
       + id     = (known after apply)
       + image  = "https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box"
-      + memory = "512 mib"
+      + memory = "1.0 gib"
       + name   = "centos-7"
       + status = "running"
 
       + network_adapter {
           + device                 = "IntelPro1000MTDesktop"
-          + host_interface         = "vboxnet1"
+          + host_interface         = "vboxnet0"
           + ipv4_address           = (known after apply)
           + ipv4_address_available = (known after apply)
           + mac_address            = (known after apply)

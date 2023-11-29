@@ -15,13 +15,13 @@ provider "virtualbox" {
 resource "virtualbox_vm" "vm1" {
   name   = "centos-7"
   image  = "https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box"
-  cpus      = 1
-  memory    = "512 mib"
+  cpus      = 2
+  memory    = "1.0 gib"
   
   network_adapter {
     type           = "hostonly"
     device         = "IntelPro1000MTDesktop"
-    host_interface = "vboxnet1"
+    host_interface = "vboxnet0"
     # On Windows use this instead
     # host_interface = "VirtualBox Host-Only Ethernet Adapter"
   }
