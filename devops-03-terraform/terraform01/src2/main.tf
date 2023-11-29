@@ -16,7 +16,7 @@ resource "virtualbox_vm" "vm1" {
   name   = "centos-7"
   image  = "https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box"
   cpus      = 2
-  memory    = "1.0 gib"
+  memory    = "1.0 gibterra "
   
   network_adapter {
     type           = "hostonly"
