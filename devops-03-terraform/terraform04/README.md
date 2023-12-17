@@ -373,7 +373,7 @@ module "vpc_dev" {
 
 ![img_3_state_import_vpc_dev_subnet.png](IMG/img_3_state_import_vpc_dev_subnet.png)
 
-![img_3_state_import_test-vm.png](src/img_3_state_import_test-vm.png)
+![img_3_state_import_test-vm.png](IMG/img_3_state_import_test-vm.png)
 
 После импортирования модулей изменений не последовало.
 
