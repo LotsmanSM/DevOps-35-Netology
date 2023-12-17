@@ -645,9 +645,9 @@ dev_network_id = "enpp7c7i0r80b2htm57e"
 dev_subnet_id = "e9bp153ld6l24ae6tig1"
 ```
 
-![img_4_yc_result_network.png](src/img_4_yc_result_network.png)
+![img_4_yc_result_network.png](IMG/img_4_yc_result_network.png)
 
-![img_4_yc_result_subnet.png](src/img_4_yc_result_subnet.png)
+![img_4_yc_result_subnet.png](IMG/img_4_yc_result_subnet.png)
 
 ### Листинг кода по заданиям 4 можно посмотреть по [ссылке](src/4).
 ------
