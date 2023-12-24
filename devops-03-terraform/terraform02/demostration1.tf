@@ -7,7 +7,7 @@ terraform {
   required_version = ">=0.13" /*Многострочный комментарий.
  Требуемая версия terraform */
 }
-
+/*
 #Секретики хардкодить нельзя никогда! Используем переменные, хоть мы их еще и не проходили!
 provider "yandex" {
     token     = var.token
@@ -15,7 +15,7 @@ provider "yandex" {
     folder_id = var.folder_id
     zone      = "ru-central1-a"
  }
-
+*/
 #создаем облачную сеть
 resource "yandex_vpc_network" "develop" {
   name = "develop"
@@ -33,7 +33,7 @@ resource "yandex_vpc_subnet" "develop" {
 data "yandex_compute_image" "ubuntu-2004-lts" {
   family = "ubuntu-2004-lts"
 }
-
+/*
 resource "yandex_compute_instance" "example" {
   name        = "netology-develop-platform-web"
   platform_id = "standard-v1"
@@ -63,3 +63,4 @@ resource "yandex_compute_instance" "example" {
   }
  
 }
+*/
