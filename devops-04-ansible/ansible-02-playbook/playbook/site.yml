@@ -1,0 +1,78 @@
+---
+- name: Install Clickhouse
+  hosts: clickhouse
+  handlers:
+    - name: Start clickhouse service
+      become: true
+      ansible.builtin.service:
+        name: clickhouse-server
+        state: restarted
+  tasks:
+    - block:
+        - name: Get clickhouse distrib
+          ansible.builtin.get_url:
+            url: "https://packages.clickhouse.com/rpm/stable/{{ item }}-{{ clickhouse_version }}.x86_64.rpm"
+            dest: "/tmp/{{ item }}-{{ clickhouse_version }}.x86_64.rpm"
+            mode: '0644'
+          with_items: "{{ clickhouse_packages }}"
+      rescue:
+        - name: Get clickhouse distrib
+          ansible.builtin.get_url:
+            url: "https://packages.clickhouse.com/rpm/stable/clickhouse-common-static-{{ clickhouse_version }}.x86_64.rpm"
+            dest: "/tmp/clickhouse-common-static-{{ clickhouse_version }}.x86_64.rpm"
+            mode: '0644'
+    - name: Install clickhouse packages
+      become: true
+      ansible.builtin.yum:
+        name:
+          - /tmp/clickhouse-common-static-{{ clickhouse_version }}.x86_64.rpm
+          - /tmp/clickhouse-client-{{ clickhouse_version }}.x86_64.rpm
+          - /tmp/clickhouse-server-{{ clickhouse_version }}.x86_64.rpm
+      notify: Start clickhouse service
+      ignore_errors: "{{ ansible_check_mode }}"
+    - name: Firewall open port
+      become: true
+      ansible.posix.firewalld:
+        port: 9000/tcp
+        state: enabled
+    - name: Flush handlers
+      ansible.builtin.meta: flush_handlers
+    - name: Pause 20 sec
+      ansible.builtin.pause:
+        seconds: 20
+    - name: Create database
+      ansible.builtin.command: "clickhouse-client -q 'create database logs;'"
+      register: create_db
+      failed_when: create_db.rc != 0 and create_db.rc !=82
+      changed_when: create_db.rc == 0
+  tags: clickhouse
+
+- name: Install Vector
+  hosts: vector
+  tasks:
+    - name: Get Vector distrib
+      ansible.builtin.get_url:
+        url: "https://packages.timber.io/vector/0.34.2/vector-{{ vector_version }}-{{ vector_architecture }}-unknown-linux-gnu.tar.gz"
+        dest: "/tmp/vector-{{ vector_version }}-{{ vector_architecture }}-unknown-linux-gnu.tar.gz"
+        mode: '0644'
+    - name: Create Vector directory
+      become: true
+      ansible.builtin.file:
+        path: /etc/vector
+        state: directory
+    - name: Unarchive Vector package
+      become: true
+      ansible.builtin.unarchive:
+        src: /tmp/vector-{{ vector_version }}-{{ vector_architecture }}-unknown-linux-gnu.tar.gz
+        dest: /etc/vector
+        remote_src: true
+    - name: Template file
+      become: true
+      ansible.builtin.template:
+        src: vector.toml.j2
+        dest: /etc/vector/vector.toml
+        mode: '0644'
+    - name: Run Vector
+      become: true
+      ansible.builtin.shell: /etc/vector/vector-x86_64-unknown-linux-gnu/bin/vector --config /etc/vector/vector.toml &
+  tags: clickhouse
