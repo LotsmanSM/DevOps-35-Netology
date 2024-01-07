@@ -1,0 +1,22 @@
+---
+vector_url: "https://packages.timber.io/vector/0.34.2/vector-0.34.2-1.x86_64.rpm"
+vector_config_dir: "/etc/vector"
+data_dir: "/var/lib/vector"
+sources:
+  our_log:
+    type: file
+    include:
+      - "/home/cloud-user/logs/*.log"
+    ignore_older: 600
+    read_from: beginning
+sinks:
+  to_clickhouse:
+    inputs:
+      - our_log
+    type: clickhouse
+    database: logs
+    table: my_table
+    endpoints: "http://130.193.38.45:8123"
+    healthcheck: false
+    compression: gzip
+    skip_unknown_fields: true

@@ -76,3 +76,4 @@
       become: true
       ansible.builtin.shell: /etc/vector/vector-x86_64-unknown-linux-gnu/bin/vector --config /etc/vector/vector.toml &
   tags: clickhouse
+  

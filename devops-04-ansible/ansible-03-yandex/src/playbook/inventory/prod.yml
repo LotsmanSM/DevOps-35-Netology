@@ -1,0 +1,23 @@
+---
+clickhouse:
+  hosts:
+    centos7-1:
+      ansible_connection: ssh
+      ansible_host: 62.84.126.84
+      ansible_ssh_user: centos
+      ansible_private_key_file: ~/.ssh/id_ed25519
+vector:
+  hosts:
+    centos7-2:
+      ansible_connection: ssh
+      ansible_host: 62.84.117.153
+      ansible_ssh_user: centos
+      ansible_private_key_file: ~/.ssh/id_ed25519
+lighthouse:
+  hosts:
+    centos7-3:
+      ansible_connection: ssh
+      ansible_host: 130.193.38.45
+      ansible_ssh_user: centos
+      ansible_private_key_file: ~/.ssh/id_ed25519
+      

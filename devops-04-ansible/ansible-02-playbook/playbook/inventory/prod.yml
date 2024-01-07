@@ -4,7 +4,7 @@ clickhouse:
     clickhouse-01:
       ansible_connection: ssh
       ansible_ssh_user: root
-      ansible_host: 192.168.0.50
+      ansible_host: 192.168.0.51
       ansible_private_key_file: ~/.ssh/id_ed25519
 
 vector:
@@ -12,5 +12,5 @@ vector:
     vector-01:
       ansible_connection: ssh
       ansible_ssh_user: root
-      ansible_host: 192.168.0.50
+      ansible_host: 192.168.0.51
       ansible_private_key_file: ~/.ssh/id_ed25519
