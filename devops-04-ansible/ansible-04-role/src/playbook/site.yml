@@ -1,0 +1,59 @@
+---
+- name: Install Nginx
+  handlers:
+    - name: start-nginx
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+      become: true
+      become_method: sudo
+    - name: restart-nginx
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
+      become: true
+      become_method: sudo
+  hosts: lighthouse
+  tasks:
+    - name: Nginx | Install epel-release
+      become: true
+      ansible.builtin.yum:
+        name: epel-release
+        state: present
+    - name: Nginx | Install Nginx
+      become: true
+      ansible.builtin.yum:
+        name: nginx
+        state: present
+    - name: Nginx | Create config
+      become: true
+      ansible.builtin.template:
+        src: templates/nginx.conf.j2
+        dest: /etc/nginx/nginx.conf
+        mode: '0644'
+      notify: start-nginx
+  tags: Nginx
+
+- name: Install Lighthouse
+  hosts: lighthouse
+  pre_tasks:
+    - name: Lighthouse | Install Dependencies
+      become: true
+      ansible.builtin.yum:
+        name: git
+        state: present
+  roles:
+    - lighthouse
+  tags: lighthouse
+
+- name: Install Clickhouse
+  hosts: clickhouse
+  roles:
+    - lighthouse
+  tags: clickhouse
+
+- name: Install Vector
+  hosts: vector
+  roles:
+    - vector
+  tags: vector
