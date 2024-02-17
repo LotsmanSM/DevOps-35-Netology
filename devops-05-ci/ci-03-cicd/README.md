@@ -672,6 +672,22 @@ OS name: "linux", version: "6.7.0-204.fsync.fc39.x86_64", arch: "amd64", family:
 ### Основная часть
 
 1. Поменяйте в `pom.xml` блок с зависимостями под ваш артефакт из первого пункта задания для Nexus (java с версией 8_282).
+
+Меняем в pom.xml блок с зависимостями под наш артефакт из первого пункта задания для Nexus (java с версией 8_282)
+
+```
+  <groupId>netology</groupId>
+  <artifactId>java</artifactId>
+  <version>8_282</version>
+   <repositories>
+    <repository>
+      <id>my-repo</id>
+      <name>maven-public</name>
+      <url>http://51.250.71.34:8081/repository/maven-public/</url>
+    </repository>
+  </repositories>
+```
+
 2. Запустите команду `mvn package` в директории с `pom.xml`, ожидайте успешного окончания.
 
 ```bash
