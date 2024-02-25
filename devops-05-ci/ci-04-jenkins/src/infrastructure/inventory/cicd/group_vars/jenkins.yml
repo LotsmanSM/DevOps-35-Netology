@@ -1,0 +1,10 @@
+---
+user_group: "{{ jenkins_user_group }}"
+user_name: "{{ jenkins_user_name }}"
+jenkins_user_name: almalinux
+jenkins_user_group: jenkins
+java_packages:
+  - fontconfig
+  - java-17-openjdk-devel
+  - java-17-openjdk
+jenkins_agent_dir: /opt/jenkins_agent/
