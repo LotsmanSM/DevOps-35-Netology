@@ -10,7 +10,7 @@
 
 2. Установить Jenkins при помощи playbook.
 
-Исправил playbook для установки на AlmaLinux 8. Для установки Jenkins использовал java-21 и python 3.11
+Исправил playbook для установки на AlmaLinux 9. Для установки Jenkins использовал java-17 и python 3.9
 Установил Jenkins при помощи ansible:
 
 ```bash
