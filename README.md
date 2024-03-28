@@ -75,7 +75,7 @@
 
 ### [4. Платформа мониторинга Sentry](/devops-06-monitoring/monitoring-04-sentry/README.md)
 
-### ~~[5. Инцидент-менеджмент](/devops-06-monitoring/monitoring-05-incident-management/README.md)~~
+### [5. Инцидент-менеджмент](/devops-06-monitoring/monitoring-05-incident-management/README.md)
 
 
 
