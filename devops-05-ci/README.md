@@ -2,7 +2,7 @@
 
 ## [1. Жизненный цикл ПО](/devops-05-ci/ci-01-intro/README.md)
 
-## [2. DevOps и SRE (Тест)](/devops-05-ci/ci-02-devops/)
+## [2. DevOps и SRE (Тест)](/devops-05-ci/ci-02-devops/README.md)
 
 ## [3. Процессы CI/CD](/devops-05-ci/ci-03-cicd/README.md)
 
