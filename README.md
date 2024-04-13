@@ -85,7 +85,7 @@
 
 ### [2. Микросервисы: принципы](/devops-07-microservices/microservices-02-principles/README.md)
 
-### ~~[3. Микросервисы: подходы](/devops-07-microservices/microservices-03-approaches/README.md)~~
+### [3. Микросервисы: подходы](/devops-07-microservices/microservices-03-approaches/README.md)
 
 ### ~~[4. Микросервисы: масштабирование](/devops-07-microservices/microservices-04-scaling/README.md)~~
 
