@@ -6,4 +6,4 @@
 
 ### [3. Микросервисы: подходы](/devops-07-microservices/microservices-03-approaches/README.md)
 
-### ~~[4. Микросервисы: масштабирование](/devops-07-microservices/microservices-04-scaling/README.md)~~
+### [4. Микросервисы: масштабирование](/devops-07-microservices/microservices-04-scaling/README.md)
