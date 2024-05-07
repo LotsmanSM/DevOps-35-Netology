@@ -6,6 +6,6 @@
 
 ## [3. Введение. Экосистема. Архитектура. Жизненный цикл Docker контейнера](/devops-02-virt/virt-03-docker/README.md)
 
-## [4. Оркестрация группой Docker контейнеров на примере Docker Compose](/devops-02-virt/virt-04-docker-compose/)
+## [4. Оркестрация группой Docker контейнеров на примере Docker Compose](/devops-02-virt/virt-04-docker-compose/README.md)
 
 ## [5. Оркестрация кластером Docker контейнеров на примере Docker Swarm](/devops-02-virt/virt-05-docker-swarm/README.md)

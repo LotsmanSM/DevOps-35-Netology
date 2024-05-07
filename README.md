@@ -13,7 +13,7 @@
 
 ### [3. Введение. Экосистема. Архитектура. Жизненный цикл Docker контейнера](/devops-02-virt/virt-03-docker/README.md)
 
-### [4. Оркестрация группой Docker контейнеров на примере Docker Compose](/devops-02-virt/virt-04-docker-compose/)
+### [4. Оркестрация группой Docker контейнеров на примере Docker Compose](/devops-02-virt/virt-04-docker-compose/README.md)
 
 ### [5. Оркестрация кластером Docker контейнеров на примере Docker Swarm](/devops-02-virt/virt-05-docker-swarm/README.md)
 
@@ -91,11 +91,11 @@
 
 
 
-## ~~[Kubernetes: основы, применение и администрирование](/devops-08-kubernetes/README.md)~~
+## [Kubernetes: основы, применение и администрирование](/devops-08-kubernetes/README.md)
 
-### ~~Основы Kubernetes~~
+## Основы Kubernetes
 
-### ~~[1. Kubernetes. Причины появления. Команда kubectl](/)~~
+### [1. Kubernetes. Причины появления. Команда kubectl](/devops-08-kubernetes/kubernetes-1.1-kubectl/README.md)
 
 ### ~~[2. Базовые объекты K8S](/)~~
 
@@ -105,7 +105,7 @@
 
 ### ~~[5. Сетевое взаимодействие в Kubernetes. Часть 2](/)~~
 
-### ~~Применение Kubernetes~~
+## ~~Применение Kubernetes~~
 
 ### ~~[6. Хранение в K8s. Часть 1](/)~~
 
@@ -115,7 +115,7 @@
 
 ### ~~[9. Helm](/)~~
 
-### ~~Администрирование Kubernetes~~
+## ~~Администрирование Kubernetes~~
 
 ### ~~[10. Компоненты Kubernetes](/)~~
 
