@@ -127,7 +127,7 @@
 
 Выполнено!
 ```
-![img01_snap_install.png](/img/img01_snap_install.png)
+![img01_snap_install.png](/kubernetes-1.1-kubectl/img/img01_snap_install.png)
 
 После установки создаю символьную ссылку для поддержки Snap.
 
