@@ -182,7 +182,7 @@ Created symlink /etc/systemd/system/sockets.target.wants/snapd.socket → /usr/l
 2024-05-07T20:45:58+03:00 INFO Waiting for automatic snapd restart...
 microk8s (1.29/stable) v1.29.4 from Canonical✓ installed
 ```
-![img02_microk8s_install.png](/kubernetes-1.1-kubectl/img/img02_microk8s_install.png)
+![img02_microk8s_install.png](/devops-08-kubernetes/kubernetes-1.1-kubectl/img/img02_microk8s_install.png)
 
 Добавляю пользователя в группу microk8s, создаю директорию с конфигурацией и даю пользователю доступ к этой директории:
 
@@ -239,7 +239,7 @@ addons:
 
 Также можно посмотреть ноды, включить аддоны, посмотреть конфигурацию и т.д.:
 
-![img03_microk8s_other.png](/kubernetes-1.1-kubectl/img/img03_microk8s_other.png)
+![img03_microk8s_other.png](/devops-08-kubernetes/kubernetes-1.1-kubectl/img/img03_microk8s_other.png)
 
 Поскольку я запустил только MicroK8S, у меня работает всего одна нода.
 
@@ -292,7 +292,7 @@ https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/cre
 
 Редактирую файл `/var/snap/microk8s/current/certs/csr.conf.template` и добавляю адреса для внешнего подключения:
 
-![img04_microk8s_ip.png](/kubernetes-1.1-kubectl/img/img04_microk8s_ip.png)
+![img04_microk8s_ip.png](/devops-08-kubernetes/kubernetes-1.1-kubectl/img/img04_microk8s_ip.png)
 
 3. Обновляю сертификаты:
 
@@ -327,7 +327,7 @@ success
 
 1. Установил на свою рабочую машину с Pop OS 22.04 kubectl
 
-![img05_local_kubectl.png](/kubernetes-1.1-kubectl/img/img05_local_kubectl.png)
+![img05_local_kubectl.png](/devops-08-kubernetes/kubernetes-1.1-kubectl/img/img05_local_kubectl.png)
 
 Генерируем на виртуальном сервере microk8s config для внешного подключения с помощью kubectl
 
@@ -348,7 +348,7 @@ rockylinux9   Ready    <none>   85m   v1.29.4
 
 Узнаю токен для входа в Kubernetes Dashboard:
 
-![img06_local_kubectl_token.png](/kubernetes-1.1-kubectl/img/img06_local_kubectl_token.png)
+![img06_local_kubectl_token.png](/devops-08-kubernetes/kubernetes-1.1-kubectl/img/img06_local_kubectl_token.png)
 
 Используя `port-forward` подключаюсь к Kubernetes Dashboard:
 
@@ -361,6 +361,6 @@ Handling connection for 10443
 
 Авторизуюсь в Kubernetes Dashboard:
 
-![img07_dashboard.png](/kubernetes-1.1-kubectl/img/img07_dashboard.png)
+![img07_dashboard.png](/devops-08-kubernetes/kubernetes-1.1-kubectl/img/img07_dashboard.png)
 
 ------
