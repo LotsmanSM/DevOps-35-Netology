@@ -4,7 +4,7 @@
 
 ### [1. Kubernetes. Причины появления. Команда kubectl](/devops-08-kubernetes/kubernetes-1.1-kubectl/README.md)
 
-### ~~[2. Базовые объекты K8S](/)~~
+### [2. Базовые объекты K8S](/devops-08-kubernetes/kubernetes-1.2-basic-objects/README.md)
 
 ### ~~[3. Запуск приложений в K8S](/)~~
 
