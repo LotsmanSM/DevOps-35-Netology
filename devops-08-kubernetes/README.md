@@ -6,7 +6,7 @@
 
 ### [2. Базовые объекты K8S](/devops-08-kubernetes/kubernetes-1.2-basic-objects/README.md)
 
-### ~~[3. Запуск приложений в K8S](/)~~
+### [3. Запуск приложений в K8S](/devops-08-kubernetes/kubernetes-1.3-launching-applications/README.md)
 
 ### ~~[4. Сетевое взаимодействие в Kubernetes. Часть 1](/)~~
 
