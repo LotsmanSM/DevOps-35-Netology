@@ -101,7 +101,7 @@
 
 ### [3. Запуск приложений в K8S](/devops-08-kubernetes/kubernetes-1.3-launching-applications/README.md)
 
-### ~~[4. Сетевое взаимодействие в Kubernetes. Часть 1](/)~~
+### [4. Сетевое взаимодействие в Kubernetes. Часть 1](/devops-08-kubernetes/kubernetes-1.4-networking-part1/README.md)
 
 ### ~~[5. Сетевое взаимодействие в Kubernetes. Часть 2](/)~~
 
