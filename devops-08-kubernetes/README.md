@@ -10,17 +10,17 @@
 
 ### [4. Сетевое взаимодействие в Kubernetes. Часть 1](/devops-08-kubernetes/kubernetes-1.4-networking-part1/README.md)
 
-### ~~[5. Сетевое взаимодействие в Kubernetes. Часть 2](/)~~
+### [5. Сетевое взаимодействие в Kubernetes. Часть 2](/devops-08-kubernetes/kubernetes-1.5-networking-part2/README.md)
 
 ## ~~Применение Kubernetes~~
 
-### ~~[6. Хранение в K8s. Часть 1](/)~~
+### ~~[6. Хранение в K8s. Часть 1](/devops-08-kubernetes/kubernetes-2.1-storage-part1/README.md)~~
 
-### ~~[7. Хранение в K8s. Часть 2](/)~~
+### ~~[7. Хранение в K8s. Часть 2](/devops-08-kubernetes/kubernetes-2.2-storage-part2/README.md)~~
 
-### ~~[8. Управление доступом](/)~~
+### ~~[8. Управление доступом](/devops-08-kubernetes/kubernetes-2.3-access-control/README.md)~~
 
-### ~~[9. Helm](/)~~
+### ~~[9. Helm](/devops-08-kubernetes/kubernetes-2.4-helm/README.md)~~
 
 ## ~~Администрирование Kubernetes~~
 
