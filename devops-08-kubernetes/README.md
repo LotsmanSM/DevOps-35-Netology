@@ -12,9 +12,9 @@
 
 ### [5. Сетевое взаимодействие в Kubernetes. Часть 2](/devops-08-kubernetes/kubernetes-1.5-networking-part2/README.md)
 
-## ~~Применение Kubernetes~~
+## Применение Kubernetes
 
-### ~~[6. Хранение в K8s. Часть 1](/devops-08-kubernetes/kubernetes-2.1-storage-part1/README.md)~~
+### [6. Хранение в K8s. Часть 1](/devops-08-kubernetes/kubernetes-2.1-storage-part1/README.md)
 
 ### ~~[7. Хранение в K8s. Часть 2](/devops-08-kubernetes/kubernetes-2.2-storage-part2/README.md)~~
 
