@@ -109,7 +109,7 @@
 
 ### [6. Хранение в K8s. Часть 1](/devops-08-kubernetes/kubernetes-1.6-storage-part1/README.md)
 
-### ~~[7. Хранение в K8s. Часть 2](/devops-08-kubernetes/kubernetes-1.7-storage-part2/README.md)~~
+### [7. Хранение в K8s. Часть 2](/devops-08-kubernetes/kubernetes-1.7-storage-part2/README.md)
 
 ### ~~[8. Управление доступом](/devops-08-kubernetes/kubernetes-1.8-access-control/README.md)~~
 
