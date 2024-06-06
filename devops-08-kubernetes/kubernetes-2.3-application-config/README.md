@@ -238,12 +238,3 @@ kube-root-ca.crt       1      12m
 [nginx_ingress.yaml](/devops-08-kubernetes/kubernetes-2.3-application-config/src/nginx_ingress.yaml)
 
 ------
-
-
-
-kubectl -n config-test get secrets
-kubectl -n config-test get svc
-kubectl -n config-test get pods
-kubectl -n config-test get deployments
-kubectl -n config-test get ingress
-kubectl -n config-test get cm

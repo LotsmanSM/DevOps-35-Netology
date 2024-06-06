@@ -113,7 +113,7 @@
 
 ### [8. Конфигурация приложений](/devops-08-kubernetes/kubernetes-2.3-application-config/README.md)
 
-### ~~[9. Управление доступом](/devops-08-kubernetes/kubernetes-2.4-access-control/README.md)~~
+### [9. Управление доступом](/devops-08-kubernetes/kubernetes-2.4-access-control/README.md)
 
 ### ~~[10. Helm](/devops-08-kubernetes/kubernetes-2.5-helm/README.md)~~
 
