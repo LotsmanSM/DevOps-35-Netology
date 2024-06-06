@@ -107,25 +107,27 @@
 
 ## Применение Kubernetes
 
-### [6. Хранение в K8s. Часть 1](/devops-08-kubernetes/kubernetes-1.6-storage-part1/README.md)
+### [6. Хранение в K8s. Часть 1](/devops-08-kubernetes/kubernetes-2.1-storage-part1/README.md)
 
-### [7. Хранение в K8s. Часть 2](/devops-08-kubernetes/kubernetes-1.7-storage-part2/README.md)
+### [7. Хранение в K8s. Часть 2](/devops-08-kubernetes/kubernetes-2.2-storage-part2/README.md)
 
-### ~~[8. Управление доступом](/devops-08-kubernetes/kubernetes-1.8-access-control/README.md)~~
+### [8. Конфигурация приложений](/devops-08-kubernetes/kubernetes-2.3-application-config/README.md)
 
-### ~~[9. Helm](/devops-08-kubernetes/kubernetes-1.9-helm/README.md)~~
+### ~~[9. Управление доступом](/devops-08-kubernetes/kubernetes-2.4-access-control/README.md)~~
+
+### ~~[10. Helm](/devops-08-kubernetes/kubernetes-2.5-helm/README.md)~~
 
 ## ~~Администрирование Kubernetes~~
 
-### ~~[10. Компоненты Kubernetes](/)~~
+### ~~[11. Компоненты Kubernetes](/devops-08-kubernetes/kubernetes-3.1-components/README.md)~~
 
-### ~~[11. Установка Kubernetes с помощью kubeadm, kubespray](/)~~
+### ~~[12. Установка Kubernetes с помощью kubeadm, kubespray](/devops-08-kubernetes/kubernetes-3.2-installing-K8S/README.md)~~
 
-### ~~[12. Как работает сеть в K8S](/)~~
+### ~~[13. Как работает сеть в K8S](/devops-08-kubernetes/kubernetes-3.3-network-works-K8s/README.md)~~
 
-### ~~[13. Обновление приложений](/)~~
+### ~~[14. Обновление приложений](/devops-08-kubernetes/kubernetes-3.4-application-update/README.md)~~
 
-### ~~[14. Troubleshooting](/)~~
+### ~~[15. Troubleshooting](/devops-08-kubernetes/kubernetes-3.5-troubleshooting/README.md)~~
 
 ## ~~Организация проекта при помощи облачных провайдеров~~
 
