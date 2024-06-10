@@ -115,11 +115,11 @@
 
 ### [9. Управление доступом](/devops-08-kubernetes/kubernetes-2.4-access-control/README.md)
 
-### ~~[10. Helm](/devops-08-kubernetes/kubernetes-2.5-helm/README.md)~~
+### [10. Helm](/devops-08-kubernetes/kubernetes-2.5-helm/README.md)
 
-## ~~Администрирование Kubernetes~~
+## Администрирование Kubernetes
 
-### ~~[11. Компоненты Kubernetes](/devops-08-kubernetes/kubernetes-3.1-components/README.md)~~
+### [11. Компоненты Kubernetes](/devops-08-kubernetes/kubernetes-3.1-components/README.md)
 
 ### ~~[12. Установка Kubernetes с помощью kubeadm, kubespray](/devops-08-kubernetes/kubernetes-3.2-installing-K8S/README.md)~~
 
