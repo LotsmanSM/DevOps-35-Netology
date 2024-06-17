@@ -28,6 +28,18 @@
 
 Т.к. в MicroK8S установлен плагин Calico из коробки, то буду успользовать его для выполнения задания
 
+```bash
+╰─➤kubectl get pods -A
+NAMESPACE                NAME                                         READY   STATUS    RESTARTS         AGE
+kube-system              calico-kube-controllers-77bd7c5b-pj9kg       1/1     Running   18 (3h16m ago)   41d
+kube-system              calico-node-6d9gr                            1/1     Running   18 (3h16m ago)   41d
+kube-system              coredns-864597b5fd-dsqj5                     1/1     Running   18 (3h16m ago)   41d
+kube-system              dashboard-metrics-scraper-5657497c4c-dpvzj   1/1     Running   18 (3h16m ago)   41d
+kube-system              kubernetes-dashboard-54b48fbf9-mhk6x         1/1     Running   18 (3h16m ago)   41d
+kube-system              metrics-server-848968bdcd-nmr2f              1/1     Running   18 (3h16m ago)   41d
+nfs-server-provisioner   nfs-server-provisioner-0                     1/1     Running   3 (3h16m ago)    15d
+```
+
 1. Пишу манифесты deployment'ов приложений [frontend](/devops-08-kubernetes/kubernetes-3.3-network-works-K8s/src/frontend.yaml), [backend](/devops-08-kubernetes/kubernetes-3.3-network-works-K8s/src/backend.yaml) и [cache](/devops-08-kubernetes/kubernetes-3.3-network-works-K8s/src/cache.yaml) и соответсвующие им сервисы.
 
 2. В манифестах deployment'ов в качестве образа используется network-multitool.
