@@ -123,7 +123,7 @@
 
 ### ~~[12. Установка Kubernetes с помощью kubeadm, kubespray](/devops-08-kubernetes/kubernetes-3.2-installing-K8S/README.md)~~
 
-### ~~[13. Как работает сеть в K8S](/devops-08-kubernetes/kubernetes-3.3-network-works-K8s/README.md)~~
+### [13. Как работает сеть в K8S](/devops-08-kubernetes/kubernetes-3.3-network-works-K8s/README.md)
 
 ### ~~[14. Обновление приложений](/devops-08-kubernetes/kubernetes-3.4-application-update/README.md)~~
 
