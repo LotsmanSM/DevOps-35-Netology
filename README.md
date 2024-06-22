@@ -125,7 +125,7 @@
 
 ### [13. Как работает сеть в K8S](/devops-08-kubernetes/kubernetes-3.3-network-works-K8s/README.md)
 
-### ~~[14. Обновление приложений](/devops-08-kubernetes/kubernetes-3.4-application-update/README.md)~~
+### [14. Обновление приложений](/devops-08-kubernetes/kubernetes-3.4-application-update/README.md)
 
 ### ~~[15. Troubleshooting](/devops-08-kubernetes/kubernetes-3.5-troubleshooting/README.md)~~
 
