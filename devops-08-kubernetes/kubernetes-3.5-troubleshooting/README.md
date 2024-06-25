@@ -102,7 +102,13 @@ curl: (6) Couldn't resolve host 'auth-db'
 
 ![img01.png](img/img01.png)
 
-3. Отредактирую манифест деплоймента web-consumer и в строке команды `curl auth-db` заменю на `curl auth-db.data`:
+3. Вижу 2 варианта исправления данной проблемы:
+
+      1. внести все поды в один  namespace
+
+      2. в строке команды `curl auth-db` заменю на `curl auth-db.data`
+
+Воспользуюсь вторым вариантом. Отредактирую манифест деплоймента web-consumer и в строке команды `curl auth-db` заменю на `curl auth-db.data`:
 
 [Ссылка на отредактированный манифест task.yaml](src/task.yaml)
 
