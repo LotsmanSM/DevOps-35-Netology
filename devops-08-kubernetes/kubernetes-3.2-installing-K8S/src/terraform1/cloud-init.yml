@@ -1,0 +1,28 @@
+#cloud-config
+users:
+  - name: user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ${ssh_public_key}
+# apt_repository:
+#   - repo: 'ppa:deadsnakes/ppa'
+#     state: present 
+package_update: true
+package_upgrade: false
+packages:
+ - mc
+ - git
+ - atop
+ - ncdu
+ - net-tools
+ - apt-transport-https
+ - snapd
+ - traceroute
+ - python3
+ - python3-pip
+
+runcmd:
+  - snap install kubectl --classic
+  - pip3 -m pip install ruamel.yaml
