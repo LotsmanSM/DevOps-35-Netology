@@ -51,7 +51,7 @@ resource "yandex_compute_instance" "nat" {
   }
 
   metadata = {
-    ssh-keys = "admn:${local.ssh-keys}"
+    ssh-keys = "debian:${local.ssh-keys}"
     serial-port-enable = "1"
   }
 
