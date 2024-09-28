@@ -139,4 +139,4 @@
 
 ### ~~[4. Кластеры. Ресурсы под управлением облачным провайдером](/devops-09-cloud/cloud-04-clusters/README.md)~~
 
-## ~~Дипломный блок профессии DevOps-инженер~~
+## [Дипломный блок профессии DevOps-инженер](https://github.com/LotsmanSM/DevOps-35-diplom-yc)
