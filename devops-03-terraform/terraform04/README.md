@@ -132,7 +132,7 @@ Terraform will perform the following actions:
                     shell: /bin/bash
                     sudo: ['ALL=(ALL) NOPASSWD:ALL']
                     ssh_authorized_keys:
-                      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                      - ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                 
                 package_update: true
                 package_upgrade: false
@@ -157,7 +157,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8fo5t7f6j6iqvjnk3b"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 10
               + snapshot_id = (known after apply)
@@ -234,9 +234,9 @@ Do you want to perform these actions?
   Enter a value: yes
 
 module.vpc_dev.yandex_vpc_network.vpc: Creating...
-module.vpc_dev.yandex_vpc_network.vpc: Creation complete after 2s [id=enparmr9jpl99mj3sp7o]
+module.vpc_dev.yandex_vpc_network.vpc: Creation complete after 2s [id=XXXXXXXXXXXXXXXXXXXX]
 module.vpc_dev.yandex_vpc_subnet.subnet: Creating...
-module.vpc_dev.yandex_vpc_subnet.subnet: Creation complete after 0s [id=e9bpk3p9iak1cl1oe3fu]
+module.vpc_dev.yandex_vpc_subnet.subnet: Creation complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
 module.test-vm.yandex_compute_instance.vm[0]: Creating...
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [10s elapsed]
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [20s elapsed]
@@ -247,7 +247,7 @@ module.test-vm.yandex_compute_instance.vm[0]: Still creating... [1m0s elapsed]
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [1m10s elapsed]
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [1m20s elapsed]
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [1m30s elapsed]
-module.test-vm.yandex_compute_instance.vm[0]: Creation complete after 1m33s [id=fhmhl8sb7ukvkjp6pegd]
+module.test-vm.yandex_compute_instance.vm[0]: Creation complete after 1m33s [id=XXXXXXXXXXXXXXXXXXXX]
 
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 
@@ -423,9 +423,9 @@ variable "subnets" {
 ```bash
 ╰─➤terraform apply
 data.template_file.cloudinit: Reading...
-data.template_file.cloudinit: Read complete after 0s [id=9e5c58db02820a4d5ad508225029ada84663869b93a733dd410e8018348515b6]
+data.template_file.cloudinit: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]
 module.test-vm.data.yandex_compute_image.my_image: Reading...
-module.test-vm.data.yandex_compute_image.my_image: Read complete after 1s [id=fd8fo5t7f6j6iqvjnk3b]
+module.test-vm.data.yandex_compute_image.my_image: Read complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -456,7 +456,7 @@ Terraform will perform the following actions:
                     shell: /bin/bash
                     sudo: ['ALL=(ALL) NOPASSWD:ALL']
                     ssh_authorized_keys:
-                      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                      - ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                 
                 package_update: true
                 package_upgrade: false
@@ -481,7 +481,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8fo5t7f6j6iqvjnk3b"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 10
               + snapshot_id = (known after apply)
@@ -619,30 +619,30 @@ Do you want to perform these actions?
 
 module.vpc_prod.yandex_vpc_network.vpc_net: Creating...
 module.vpc_dev.yandex_vpc_network.vpc_net: Creating...
-module.vpc_prod.yandex_vpc_network.vpc_net: Creation complete after 2s [id=enphva2rbtrqhhq1576g]
+module.vpc_prod.yandex_vpc_network.vpc_net: Creation complete after 2s [id=XXXXXXXXXXXXXXXXXXXX]
 module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-c"]: Creating...
 module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-a"]: Creating...
 module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-b"]: Creating...
-module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-a"]: Creation complete after 0s [id=e9bpd87dh72rp17esg2a]
-module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-c"]: Creation complete after 1s [id=b0c7l4932f37itcn9b46]
-module.vpc_dev.yandex_vpc_network.vpc_net: Creation complete after 3s [id=enpp7c7i0r80b2htm57e]
+module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-a"]: Creation complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-c"]: Creation complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+module.vpc_dev.yandex_vpc_network.vpc_net: Creation complete after 3s [id=XXXXXXXXXXXXXXXXXXXX]
 module.vpc_dev.yandex_vpc_subnet.vpc_subnet["ru-central1-a"]: Creating...
-module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-b"]: Creation complete after 1s [id=e2ls632nl8nfkb79h85a]
-module.vpc_dev.yandex_vpc_subnet.vpc_subnet["ru-central1-a"]: Creation complete after 1s [id=e9bp153ld6l24ae6tig1]
+module.vpc_prod.yandex_vpc_subnet.vpc_subnet["ru-central1-b"]: Creation complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+module.vpc_dev.yandex_vpc_subnet.vpc_subnet["ru-central1-a"]: Creation complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
 module.test-vm.yandex_compute_instance.vm[0]: Creating...
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [10s elapsed]
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [20s elapsed]
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [30s elapsed]
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [40s elapsed]
 module.test-vm.yandex_compute_instance.vm[0]: Still creating... [50s elapsed]
-module.test-vm.yandex_compute_instance.vm[0]: Creation complete after 54s [id=fhmv0bmspq7fhv8g56lk]
+module.test-vm.yandex_compute_instance.vm[0]: Creation complete after 54s [id=XXXXXXXXXXXXXXXXXXXX]
 
 Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-dev_network_id = "enpp7c7i0r80b2htm57e"
-dev_subnet_id = "e9bp153ld6l24ae6tig1"
+dev_network_id = "XXXXXXXXXXXXXXXXXXXX"
+dev_subnet_id = "XXXXXXXXXXXXXXXXXXXX"
 ```
 
 ![img_4_yc_result_network.png](IMG/img_4_yc_result_network.png)
