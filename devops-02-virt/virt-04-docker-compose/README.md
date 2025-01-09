@@ -30,12 +30,12 @@ Pick desired action:
  [1] Re-initialize this profile 'default' with new settings
  [2] Create a new profile
 Please enter your numeric choice: 1
-Please go to https://oauth.yandex.ru/authorize?response_type=token&client_id=1a6990aa636648e9b2ef855fa7bec2fb in order to obtain OAuth token.
+Please go to https://oauth.yandex.ru/authorize?response_type=token&client_id=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX in order to obtain OAuth token.
 
-Please enter OAuth token: [y0_AgAAAAAQFxg******************************aHoph48uofk6lY]
-You have one cloud available: 'cloud-lotsmansm' (id = b1gc953ra7cl7jm5s3u4). It is going to be used by default.
+Please enter OAuth token: [y0_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]
+You have one cloud available: 'cloud-lotsmansm' (id = XXXXXXXXXXXXXXXXXXXX). It is going to be used by default.
 Please choose folder to use:
- [1] default (id = b1gl6dqee4o5qromajnb)
+ [1] default (id = XXXXXXXXXXXXXXXXXXXX)
  [2] Create a new folder
 Please enter your numeric choice: 1
 Your current folder has been set to 'default' (id = b1gl6dqee4o5qromajnb).
@@ -49,28 +49,28 @@ Please enter your numeric choice: 1
 Your profile default Compute zone has been set to 'ru-central1-a'.
 
 ╰─➤  yc config list                                                                                                                                                                                   127 ↵
-token: y0_AgAAAAAQFxg6AATuwQAAAADwQLkMk-FvSMcBRwCoOaHoph48uofk6lY
-cloud-id: b1gc953ra7cl7jm5s3u4
-folder-id: b1gl6dqee4o5qromajnb
+token: y0_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+cloud-id: XXXXXXXXXXXXXXXXXXXX
+folder-id: XXXXXXXXXXXXXXXXXXXX
 compute-default-zone: ru-central1-a
 
 ╰─➤  yc vpc network create --name net --labels my-label=netology --description "Network - netoligy"
-id: enpm7gmn07i58p8eep4b
-folder_id: b1gl6dqee4o5qromajnb
+id: XXXXXXXXXXXXXXXXXXXX
+folder_id: XXXXXXXXXXXXXXXXXXXX
 created_at: "2023-10-27T15:11:10Z"
 name: net
 description: Network - netoligy
 labels:
   my-label: netology
-default_security_group_id: enpk05kjvjs13gm44tas
+default_security_group_id: XXXXXXXXXXXXXXXXXXXX
 
 ╰─➤  yc vpc subnet create --name my-subnet-a --zone ru-central1-a --range 10.1.2.0/24 --network-name net --description "Subnet - netoligy"
 id: e9bgfimof3iib4j62i0f
-folder_id: b1gl6dqee4o5qromajnb
+folder_id: XXXXXXXXXXXXXXXXXXXX
 created_at: "2023-10-27T15:13:25Z"
 name: my-subnet-a
 description: Subnet - netoligy
-network_id: enpm7gmn07i58p8eep4b
+network_id: XXXXXXXXXXXXXXXXXXXX
 zone_id: ru-central1-a
 v4_cidr_blocks:
   - 10.1.2.0/24
@@ -213,7 +213,7 @@ on linux_amd64
 ```bash
 ╰─➤  yc iam key create --folder-name default --service-account-name srv-test --output key.json
 id: ajevsiecoct01o1bn708
-service_account_id: ajed1qs3on08tlekd17o
+service_account_id: XXXXXXXXXXXXXXXXXXXX
 created_at: "2023-10-28T17:38:54.896347886Z"
 key_algorithm: RSA_2048
 ```
