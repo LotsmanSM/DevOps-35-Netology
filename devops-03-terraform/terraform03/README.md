@@ -386,11 +386,11 @@ resource "yandex_compute_instance" "for_each" {
 ╰─➤terraform apply
 data.yandex_compute_image.ubuntu-2204-lts: Reading...
 data.yandex_compute_image.ubuntu: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enp28mn77qqrtek6ijc5]
-data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd8idfolcq1l43h1mlft]
-data.yandex_compute_image.ubuntu-2204-lts: Read complete after 0s [id=fd8idfolcq1l43h1mlft]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bu9egreq6qbrhg8o5d]
-yandex_vpc_security_group.example: Refreshing state... [id=enpan0rlocnr4g8r0bsl]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu-2204-lts: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_security_group.example: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -408,7 +408,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "main"
@@ -448,7 +448,7 @@ Terraform will perform the following actions:
           + security_group_ids = [
               + "enpan0rlocnr4g8r0bsl",
             ]
-          + subnet_id          = "e9bu9egreq6qbrhg8o5d"
+          + subnet_id          = "XXXXXXXXXXXXXXXXXXXX"
         }
 
       + resources {
@@ -473,7 +473,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "replica"
@@ -513,7 +513,7 @@ Terraform will perform the following actions:
           + security_group_ids = [
               + "enpan0rlocnr4g8r0bsl",
             ]
-          + subnet_id          = "e9bu9egreq6qbrhg8o5d"
+          + subnet_id          = "XXXXXXXXXXXXXXXXXXXX"
         }
 
       + resources {
@@ -538,7 +538,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "web-1"
@@ -557,7 +557,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8idfolcq1l43h1mlft"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 8
               + snapshot_id = (known after apply)
@@ -578,7 +578,7 @@ Terraform will perform the following actions:
           + security_group_ids = [
               + "enpan0rlocnr4g8r0bsl",
             ]
-          + subnet_id          = "e9bu9egreq6qbrhg8o5d"
+          + subnet_id          = "XXXXXXXXXXXXXXXXXXXX"
         }
 
       + resources {
@@ -603,7 +603,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "web-2"
@@ -622,7 +622,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8idfolcq1l43h1mlft"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 8
               + snapshot_id = (known after apply)
@@ -643,7 +643,7 @@ Terraform will perform the following actions:
           + security_group_ids = [
               + "enpan0rlocnr4g8r0bsl",
             ]
-          + subnet_id          = "e9bu9egreq6qbrhg8o5d"
+          + subnet_id          = "XXXXXXXXXXXXXXXXXXXX"
         }
 
       + resources {
@@ -679,8 +679,8 @@ yandex_compute_instance.web[0]: Still creating... [50s elapsed]
 yandex_compute_instance.web[1]: Still creating... [50s elapsed]
 yandex_compute_instance.web[1]: Still creating... [1m0s elapsed]
 yandex_compute_instance.web[0]: Still creating... [1m0s elapsed]
-yandex_compute_instance.web[0]: Creation complete after 1m2s [id=fhmmq5kobahp9rtp4b5q]
-yandex_compute_instance.web[1]: Creation complete after 1m7s [id=fhmc6cpqa0l3tjia9dqj]
+yandex_compute_instance.web[0]: Creation complete after 1m2s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.web[1]: Creation complete after 1m7s [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_compute_instance.for_each["main"]: Creating...
 yandex_compute_instance.for_each["replica"]: Creating...
 yandex_compute_instance.for_each["main"]: Still creating... [10s elapsed]
@@ -691,10 +691,10 @@ yandex_compute_instance.for_each["main"]: Still creating... [30s elapsed]
 yandex_compute_instance.for_each["replica"]: Still creating... [30s elapsed]
 yandex_compute_instance.for_each["main"]: Still creating... [40s elapsed]
 yandex_compute_instance.for_each["replica"]: Still creating... [40s elapsed]
-yandex_compute_instance.for_each["replica"]: Creation complete after 44s [id=fhm6lfnn1jipb8sb2as7]
+yandex_compute_instance.for_each["replica"]: Creation complete after 44s [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_compute_instance.for_each["main"]: Still creating... [50s elapsed]
 yandex_compute_instance.for_each["main"]: Still creating... [1m0s elapsed]
-yandex_compute_instance.for_each["main"]: Creation complete after 1m3s [id=fhmjjee82eptg8onh7nr]
+yandex_compute_instance.for_each["main"]: Creation complete after 1m3s [id=XXXXXXXXXXXXXXXXXXXX]
 
 Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 ```
@@ -879,8 +879,8 @@ commands will detect it and remind you to do so if necessary.
 ╰─➤terraform apply
 data.yandex_compute_image.ubuntu-2204-lts: Reading...
 data.yandex_compute_image.ubuntu: Reading...
-data.yandex_compute_image.ubuntu-2204-lts: Read complete after 0s [id=fd8idfolcq1l43h1mlft]
-data.yandex_compute_image.ubuntu: Read complete after 1s [id=fd8idfolcq1l43h1mlft]
+data.yandex_compute_image.ubuntu-2204-lts: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -925,7 +925,7 @@ Terraform will perform the following actions:
                       update_cache: yes
             EOT
           + "ssh_public_key"    = <<-EOT
-                ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
     }
@@ -983,7 +983,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "main"
@@ -1002,7 +1002,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8idfolcq1l43h1mlft"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 8
               + snapshot_id = (known after apply)
@@ -1046,7 +1046,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "replica"
@@ -1065,7 +1065,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8idfolcq1l43h1mlft"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 10
               + snapshot_id = (known after apply)
@@ -1109,7 +1109,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "storage"
@@ -1128,7 +1128,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8idfolcq1l43h1mlft"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 8
               + snapshot_id = (known after apply)
@@ -1187,7 +1187,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "web-1"
@@ -1206,7 +1206,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8idfolcq1l43h1mlft"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 8
               + snapshot_id = (known after apply)
@@ -1250,7 +1250,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "web-2"
@@ -1269,7 +1269,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8idfolcq1l43h1mlft"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = 8
               + snapshot_id = (known after apply)
@@ -1316,7 +1316,7 @@ Terraform will perform the following actions:
   # yandex_vpc_security_group.example will be created
   + resource "yandex_vpc_security_group" "example" {
       + created_at = (known after apply)
-      + folder_id  = "b1gl6dqee4o5qromajnb"
+      + folder_id  = "XXXXXXXXXXXXXXXXXXXX"
       + id         = (known after apply)
       + labels     = (known after apply)
       + name       = "example_dynamic"
@@ -1405,18 +1405,18 @@ yandex_vpc_network.develop: Creating...
 yandex_compute_disk.disks[1]: Creating...
 yandex_compute_disk.disks[0]: Creating...
 yandex_compute_disk.disks[2]: Creating...
-yandex_vpc_network.develop: Creation complete after 2s [id=enpau9d4fo1mjgga5hvv]
+yandex_vpc_network.develop: Creation complete after 2s [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_vpc_subnet.develop: Creating...
 yandex_vpc_security_group.example: Creating...
-yandex_vpc_subnet.develop: Creation complete after 1s [id=e9b8u0t3q8vuu5okg6jc]
-yandex_vpc_security_group.example: Creation complete after 2s [id=enp09v4fqr0tk5peugkd]
+yandex_vpc_subnet.develop: Creation complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_security_group.example: Creation complete after 2s [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_compute_instance.web[1]: Creating...
 yandex_compute_instance.web[0]: Creating...
-yandex_compute_disk.disks[0]: Creation complete after 10s [id=fhmr1gsragpme3ds471m]
+yandex_compute_disk.disks[0]: Creation complete after 10s [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_compute_disk.disks[2]: Still creating... [10s elapsed]
 yandex_compute_disk.disks[1]: Still creating... [10s elapsed]
-yandex_compute_disk.disks[1]: Creation complete after 10s [id=fhmnq5q60kouq3s303q1]
-yandex_compute_disk.disks[2]: Creation complete after 11s [id=fhmvquk162ll6lmu0bh0]
+yandex_compute_disk.disks[1]: Creation complete after 10s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[2]: Creation complete after 11s [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_compute_instance.storage: Creating...
 yandex_compute_instance.web[1]: Still creating... [10s elapsed]
 yandex_compute_instance.web[0]: Still creating... [10s elapsed]
@@ -1426,10 +1426,10 @@ yandex_compute_instance.web[0]: Still creating... [20s elapsed]
 yandex_compute_instance.storage: Still creating... [20s elapsed]
 yandex_compute_instance.web[0]: Still creating... [30s elapsed]
 yandex_compute_instance.web[1]: Still creating... [30s elapsed]
-yandex_compute_instance.web[0]: Creation complete after 35s [id=fhm9r4igbrkkrktnbf0c]
+yandex_compute_instance.web[0]: Creation complete after 35s [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_compute_instance.storage: Still creating... [30s elapsed]
 yandex_compute_instance.web[1]: Still creating... [40s elapsed]
-yandex_compute_instance.storage: Creation complete after 36s [id=fhm9djq35fni90bajat4]
+yandex_compute_instance.storage: Creation complete after 36s [id=XXXXXXXXXXXXXXXXXXXX]
 null_resource.web_hosts_provision: Creating...
 null_resource.web_hosts_provision: Provisioning with 'local-exec'...
 null_resource.web_hosts_provision (local-exec): Executing: ["/bin/sh" "-c" "cat ~/.ssh/id_ed25519 | ssh-add -"]
@@ -1448,12 +1448,12 @@ yandex_compute_instance.for_each["replica"]: Still creating... [20s elapsed]
 null_resource.web_hosts_provision: Still creating... [30s elapsed]
 yandex_compute_instance.for_each["main"]: Still creating... [30s elapsed]
 yandex_compute_instance.for_each["replica"]: Still creating... [30s elapsed]
-yandex_compute_instance.for_each["main"]: Creation complete after 40s [id=fhmf9vqvbgngoot256ht]
+yandex_compute_instance.for_each["main"]: Creation complete after 40s [id=XXXXXXXXXXXXXXXXXXXX]
 null_resource.web_hosts_provision: Still creating... [40s elapsed]
 yandex_compute_instance.for_each["replica"]: Still creating... [40s elapsed]
-yandex_compute_instance.for_each["replica"]: Creation complete after 40s [id=fhm0g8v25vm9b22kbg95]
+yandex_compute_instance.for_each["replica"]: Creation complete after 40s [id=XXXXXXXXXXXXXXXXXXXX]
 local_file.hosts_cfg: Creating...
-local_file.hosts_cfg: Creation complete after 0s [id=08f3645e92f8d831bc11dcc785734560ba92e5dc]
+local_file.hosts_cfg: Creation complete after 0s [id=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]
 null_resource.web_hosts_provision: Still creating... [50s elapsed]
 null_resource.web_hosts_provision: Still creating... [1m0s elapsed]
 null_resource.web_hosts_provision: Still creating... [1m10s elapsed]
@@ -1487,7 +1487,7 @@ null_resource.web_hosts_provision (local-exec): storage                    : ok=
 null_resource.web_hosts_provision (local-exec): web-1                      : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 null_resource.web_hosts_provision (local-exec): web-2                      : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
-null_resource.web_hosts_provision: Creation complete after 2m56s [id=5141200719983059564]
+null_resource.web_hosts_provision: Creation complete after 2m56s [id=XXXXXXXXXXXXXXXXXXXX]
 
 Apply complete! Resources: 13 added, 0 changed, 0 destroyed.
 ```
@@ -1557,21 +1557,21 @@ output "all_vms" {
 ╰─➤terraform apply
 data.yandex_compute_image.ubuntu: Reading...
 data.yandex_compute_image.ubuntu-2204-lts: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpau9d4fo1mjgga5hvv]
-yandex_compute_disk.disks[0]: Refreshing state... [id=fhmr1gsragpme3ds471m]
-yandex_compute_disk.disks[2]: Refreshing state... [id=fhmvquk162ll6lmu0bh0]
-yandex_compute_disk.disks[1]: Refreshing state... [id=fhmnq5q60kouq3s303q1]
-data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd8idfolcq1l43h1mlft]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9b8u0t3q8vuu5okg6jc]
-yandex_vpc_security_group.example: Refreshing state... [id=enp09v4fqr0tk5peugkd]
-data.yandex_compute_image.ubuntu-2204-lts: Read complete after 0s [id=fd8idfolcq1l43h1mlft]
-yandex_compute_instance.web[0]: Refreshing state... [id=fhm9r4igbrkkrktnbf0c]
-yandex_compute_instance.storage: Refreshing state... [id=fhm9djq35fni90bajat4]
-yandex_compute_instance.web[1]: Refreshing state... [id=fhmio17ani7j1vn95tre]
-yandex_compute_instance.for_each["replica"]: Refreshing state... [id=fhm0g8v25vm9b22kbg95]
-yandex_compute_instance.for_each["main"]: Refreshing state... [id=fhmf9vqvbgngoot256ht]
-null_resource.web_hosts_provision: Refreshing state... [id=5141200719983059564]
-local_file.hosts_cfg: Refreshing state... [id=08f3645e92f8d831bc11dcc785734560ba92e5dc]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[0]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[2]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[1]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_security_group.example: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu-2204-lts: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.web[0]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.storage: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.web[1]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.for_each["replica"]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.for_each["main"]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+null_resource.web_hosts_provision: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+local_file.hosts_cfg: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]
 
 Note: Objects have changed outside of Terraform
 
@@ -1579,7 +1579,7 @@ Terraform detected the following changes made outside of Terraform since the las
 
   # yandex_compute_instance.storage has changed
   ~ resource "yandex_compute_instance" "storage" {
-        id                        = "fhm9djq35fni90bajat4"
+        id                        = "XXXXXXXXXXXXXXXXXXXX"
       + labels                    = {}
         name                      = "storage"
         # (8 unchanged attributes hidden)
@@ -1611,28 +1611,28 @@ Plan: 1 to add, 0 to change, 1 to destroy.
 Changes to Outputs:
   + all_vms = [
       + {
-          + fqdn = "fhm9r4igbrkkrktnbf0c.auto.internal"
-          + id   = "fhm9r4igbrkkrktnbf0c"
+          + fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          + id   = "XXXXXXXXXXXXXXXXXXXX"
           + name = "web-1"
         },
       + {
-          + fqdn = "fhmio17ani7j1vn95tre.auto.internal"
-          + id   = "fhmio17ani7j1vn95tre"
+          + fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          + id   = "XXXXXXXXXXXXXXXXXXXX"
           + name = "web-2"
         },
       + {
-          + fqdn = "fhm9djq35fni90bajat4.auto.internal"
-          + id   = "fhm9djq35fni90bajat4"
+          + fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          + id   = "XXXXXXXXXXXXXXXXXXXX"
           + name = "storage"
         },
       + {
-          + fqdn = "fhmf9vqvbgngoot256ht.auto.internal"
-          + id   = "fhmf9vqvbgngoot256ht"
+          + fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          + id   = "XXXXXXXXXXXXXXXXXXXX"
           + name = "main"
         },
       + {
-          + fqdn = "fhm0g8v25vm9b22kbg95.auto.internal"
-          + id   = "fhm0g8v25vm9b22kbg95"
+          + fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          + id   = "XXXXXXXXXXXXXXXXXXXX"
           + name = "replica"
         },
     ]
@@ -1643,7 +1643,7 @@ Do you want to perform these actions?
 
   Enter a value: yes
 
-null_resource.web_hosts_provision: Destroying... [id=5141200719983059564]
+null_resource.web_hosts_provision: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
 null_resource.web_hosts_provision: Destruction complete after 0s
 null_resource.web_hosts_provision: Creating...
 null_resource.web_hosts_provision: Provisioning with 'local-exec'...
@@ -1692,28 +1692,28 @@ Outputs:
 
 all_vms = [
   {
-    "fqdn" = "fhm9r4igbrkkrktnbf0c.auto.internal"
-    "id" = "fhm9r4igbrkkrktnbf0c"
+    "fqdn" = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+    "id" = "XXXXXXXXXXXXXXXXXXXX"
     "name" = "web-1"
   },
   {
-    "fqdn" = "fhmio17ani7j1vn95tre.auto.internal"
-    "id" = "fhmio17ani7j1vn95tre"
+    "fqdn" = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+    "id" = "XXXXXXXXXXXXXXXXXXXX"
     "name" = "web-2"
   },
   {
-    "fqdn" = "fhm9djq35fni90bajat4.auto.internal"
-    "id" = "fhm9djq35fni90bajat4"
+    "fqdn" = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+    "id" = "XXXXXXXXXXXXXXXXXXXX"
     "name" = "storage"
   },
   {
-    "fqdn" = "fhmf9vqvbgngoot256ht.auto.internal"
-    "id" = "fhmf9vqvbgngoot256ht"
+    "fqdn" = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+    "id" = "XXXXXXXXXXXXXXXXXXXX"
     "name" = "main"
   },
   {
-    "fqdn" = "fhm0g8v25vm9b22kbg95.auto.internal"
-    "id" = "fhm0g8v25vm9b22kbg95"
+    "fqdn" = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+    "id" = "XXXXXXXXXXXXXXXXXXXX"
     "name" = "replica"
   },
 ]
@@ -1778,22 +1778,22 @@ ${i["name"]}   ansible_host=${i["network_interface"][0]["nat_ip_address"]==null 
 ```bash
 ╰─➤terraform destroy
 data.yandex_compute_image.ubuntu-2204-lts: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpau9d4fo1mjgga5hvv]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 data.yandex_compute_image.ubuntu: Reading...
-yandex_compute_disk.disks[1]: Refreshing state... [id=fhmnq5q60kouq3s303q1]
-yandex_compute_disk.disks[2]: Refreshing state... [id=fhmvquk162ll6lmu0bh0]
-yandex_compute_disk.disks[0]: Refreshing state... [id=fhmr1gsragpme3ds471m]
-data.yandex_compute_image.ubuntu-2204-lts: Read complete after 0s [id=fd8idfolcq1l43h1mlft]
-data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd8idfolcq1l43h1mlft]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9b8u0t3q8vuu5okg6jc]
-yandex_vpc_security_group.example: Refreshing state... [id=enp09v4fqr0tk5peugkd]
-yandex_compute_instance.web[1]: Refreshing state... [id=fhmio17ani7j1vn95tre]
-yandex_compute_instance.storage: Refreshing state... [id=fhm9djq35fni90bajat4]
-yandex_compute_instance.web[0]: Refreshing state... [id=fhm9r4igbrkkrktnbf0c]
-null_resource.web_hosts_provision: Refreshing state... [id=5177741461818192164]
-yandex_compute_instance.for_each["main"]: Refreshing state... [id=fhmf9vqvbgngoot256ht]
-yandex_compute_instance.for_each["replica"]: Refreshing state... [id=fhm0g8v25vm9b22kbg95]
-local_file.hosts_cfg: Refreshing state... [id=08f3645e92f8d831bc11dcc785734560ba92e5dc]
+yandex_compute_disk.disks[1]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[2]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[0]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu-2204-lts: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_security_group.example: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.web[1]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.storage: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.web[0]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+null_resource.web_hosts_provision: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.for_each["main"]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.for_each["replica"]: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+local_file.hosts_cfg: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   - destroy
@@ -1824,18 +1824,18 @@ Terraform will perform the following actions:
       - content_base64sha256 = "wSabL+nkKBbIPdObE4iMkF3uLO+pjvxbsYcX4hOVYi4=" -> null
       - content_base64sha512 = "UPwSYsv7g6vSoavK+AO0NLV0lYw8HiuBvugrYUlutcCimffWFHd3gSRgGU4eIDEPEpJZF5+bRkfSa8QVqHD8lw==" -> null
       - content_md5          = "104bc42cfbe41057a798f37cedbcd318" -> null
-      - content_sha1         = "08f3645e92f8d831bc11dcc785734560ba92e5dc" -> null
+      - content_sha1         = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -> null
       - content_sha256       = "c1269b2fe9e42816c83dd39b13888c905dee2cefa98efc5bb18717e21395622e" -> null
       - content_sha512       = "50fc1262cbfb83abd2a1abcaf803b434b574958c3c1e2b81bee82b61496eb5c0a299f7d6147777812460194e1e20310f129259179f9b4647d26bc415a870fc97" -> null
       - directory_permission = "0777" -> null
       - file_permission      = "0777" -> null
       - filename             = "/home/serg/DevOps-Netology/DevOps-35-Netology/devops-03-terraform/terraform03/src/hosts.cfg" -> null
-      - id                   = "08f3645e92f8d831bc11dcc785734560ba92e5dc" -> null
+      - id                   = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" -> null
     }
 
   # null_resource.web_hosts_provision will be destroyed
   - resource "null_resource" "web_hosts_provision" {
-      - id       = "5177741461818192164" -> null
+      - id       = "XXXXXXXXXXXXXXXXXXXX" -> null
       - triggers = {
           - "always_run"        = "2023-12-07T20:20:26Z"
           - "playbook_src_hash" = <<-EOT
@@ -1856,7 +1856,7 @@ Terraform will perform the following actions:
                       update_cache: yes
             EOT
           - "ssh_public_key"    = <<-EOT
-                ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         } -> null
     }
@@ -1865,8 +1865,8 @@ Terraform will perform the following actions:
   - resource "yandex_compute_disk" "disks" {
       - block_size  = 4096 -> null
       - created_at  = "2023-12-07T19:49:33Z" -> null
-      - folder_id   = "b1gl6dqee4o5qromajnb" -> null
-      - id          = "fhmr1gsragpme3ds471m" -> null
+      - folder_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - id          = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels      = {} -> null
       - name        = "disk-1" -> null
       - product_ids = [] -> null
@@ -1882,8 +1882,8 @@ Terraform will perform the following actions:
   - resource "yandex_compute_disk" "disks" {
       - block_size  = 4096 -> null
       - created_at  = "2023-12-07T19:49:33Z" -> null
-      - folder_id   = "b1gl6dqee4o5qromajnb" -> null
-      - id          = "fhmnq5q60kouq3s303q1" -> null
+      - folder_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - id          = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels      = {} -> null
       - name        = "disk-2" -> null
       - product_ids = [] -> null
@@ -1899,8 +1899,8 @@ Terraform will perform the following actions:
   - resource "yandex_compute_disk" "disks" {
       - block_size  = 4096 -> null
       - created_at  = "2023-12-07T19:49:33Z" -> null
-      - folder_id   = "b1gl6dqee4o5qromajnb" -> null
-      - id          = "fhmvquk162ll6lmu0bh0" -> null
+      - folder_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - id          = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels      = {} -> null
       - name        = "disk-3" -> null
       - product_ids = [] -> null
@@ -1915,14 +1915,14 @@ Terraform will perform the following actions:
   # yandex_compute_instance.for_each["main"] will be destroyed
   - resource "yandex_compute_instance" "for_each" {
       - created_at                = "2023-12-07T19:50:20Z" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - fqdn                      = "fhmf9vqvbgngoot256ht.auto.internal" -> null
-      - id                        = "fhmf9vqvbgngoot256ht" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - fqdn                      = "XXXXXXXXXXXXXXXXXXXX.auto.internal" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - metadata                  = {
           - "serial-port-enable" = "1"
           - "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         } -> null
       - name                      = "main" -> null
@@ -1933,13 +1933,13 @@ Terraform will perform the following actions:
 
       - boot_disk {
           - auto_delete = true -> null
-          - device_name = "fhmafilcp8shcaqq1ffj" -> null
-          - disk_id     = "fhmafilcp8shcaqq1ffj" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
 
           - initialize_params {
               - block_size = 4096 -> null
-              - image_id   = "fd8idfolcq1l43h1mlft" -> null
+              - image_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
               - size       = 8 -> null
               - type       = "network-hdd" -> null
             }
@@ -1964,7 +1964,7 @@ Terraform will perform the following actions:
           - security_group_ids = [
               - "enp09v4fqr0tk5peugkd",
             ] -> null
-          - subnet_id          = "e9b8u0t3q8vuu5okg6jc" -> null
+          - subnet_id          = "XXXXXXXXXXXXXXXXXXXX" -> null
         }
 
       - placement_policy {
@@ -1986,14 +1986,14 @@ Terraform will perform the following actions:
   # yandex_compute_instance.for_each["replica"] will be destroyed
   - resource "yandex_compute_instance" "for_each" {
       - created_at                = "2023-12-07T19:50:20Z" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - fqdn                      = "fhm0g8v25vm9b22kbg95.auto.internal" -> null
-      - id                        = "fhm0g8v25vm9b22kbg95" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - fqdn                      = "XXXXXXXXXXXXXXXXXXXX.auto.internal" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - metadata                  = {
           - "serial-port-enable" = "1"
           - "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         } -> null
       - name                      = "replica" -> null
@@ -2004,13 +2004,13 @@ Terraform will perform the following actions:
 
       - boot_disk {
           - auto_delete = true -> null
-          - device_name = "fhmmun0v5dn1f2nqf3gl" -> null
-          - disk_id     = "fhmmun0v5dn1f2nqf3gl" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
 
           - initialize_params {
               - block_size = 4096 -> null
-              - image_id   = "fd8idfolcq1l43h1mlft" -> null
+              - image_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
               - size       = 10 -> null
               - type       = "network-hdd" -> null
             }
@@ -2035,7 +2035,7 @@ Terraform will perform the following actions:
           - security_group_ids = [
               - "enp09v4fqr0tk5peugkd",
             ] -> null
-          - subnet_id          = "e9b8u0t3q8vuu5okg6jc" -> null
+          - subnet_id          = "XXXXXXXXXXXXXXXXXXXX" -> null
         }
 
       - placement_policy {
@@ -2057,14 +2057,14 @@ Terraform will perform the following actions:
   # yandex_compute_instance.storage will be destroyed
   - resource "yandex_compute_instance" "storage" {
       - created_at                = "2023-12-07T19:49:44Z" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - fqdn                      = "fhm9djq35fni90bajat4.auto.internal" -> null
-      - id                        = "fhm9djq35fni90bajat4" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - fqdn                      = "XXXXXXXXXXXXXXXXXXXX.auto.internal" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - metadata                  = {
           - "serial-port-enable" = "1"
           - "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         } -> null
       - name                      = "storage" -> null
@@ -2075,13 +2075,13 @@ Terraform will perform the following actions:
 
       - boot_disk {
           - auto_delete = true -> null
-          - device_name = "fhmouvlbmfetdm6hsdb6" -> null
-          - disk_id     = "fhmouvlbmfetdm6hsdb6" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
 
           - initialize_params {
               - block_size = 4096 -> null
-              - image_id   = "fd8idfolcq1l43h1mlft" -> null
+              - image_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
               - size       = 8 -> null
               - type       = "network-hdd" -> null
             }
@@ -2106,7 +2106,7 @@ Terraform will perform the following actions:
           - security_group_ids = [
               - "enp09v4fqr0tk5peugkd",
             ] -> null
-          - subnet_id          = "e9b8u0t3q8vuu5okg6jc" -> null
+          - subnet_id          = "XXXXXXXXXXXXXXXXXXXX" -> null
         }
 
       - placement_policy {
@@ -2126,20 +2126,20 @@ Terraform will perform the following actions:
 
       - secondary_disk {
           - auto_delete = false -> null
-          - device_name = "fhmr1gsragpme3ds471m" -> null
-          - disk_id     = "fhmr1gsragpme3ds471m" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
         }
       - secondary_disk {
           - auto_delete = false -> null
-          - device_name = "fhmnq5q60kouq3s303q1" -> null
-          - disk_id     = "fhmnq5q60kouq3s303q1" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
         }
       - secondary_disk {
           - auto_delete = false -> null
-          - device_name = "fhmvquk162ll6lmu0bh0" -> null
-          - disk_id     = "fhmvquk162ll6lmu0bh0" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
         }
     }
@@ -2147,14 +2147,14 @@ Terraform will perform the following actions:
   # yandex_compute_instance.web[0] will be destroyed
   - resource "yandex_compute_instance" "web" {
       - created_at                = "2023-12-07T19:49:37Z" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - fqdn                      = "fhm9r4igbrkkrktnbf0c.auto.internal" -> null
-      - id                        = "fhm9r4igbrkkrktnbf0c" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - fqdn                      = "XXXXXXXXXXXXXXXXXXXX.auto.internal" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - metadata                  = {
           - "serial-port-enable" = "1"
           - "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         } -> null
       - name                      = "web-1" -> null
@@ -2165,13 +2165,13 @@ Terraform will perform the following actions:
 
       - boot_disk {
           - auto_delete = true -> null
-          - device_name = "fhm4b1052q3ktj8m1lj6" -> null
-          - disk_id     = "fhm4b1052q3ktj8m1lj6" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
 
           - initialize_params {
               - block_size = 4096 -> null
-              - image_id   = "fd8idfolcq1l43h1mlft" -> null
+              - image_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
               - size       = 8 -> null
               - type       = "network-hdd" -> null
             }
@@ -2194,9 +2194,9 @@ Terraform will perform the following actions:
           - nat_ip_address     = "51.250.78.232" -> null
           - nat_ip_version     = "IPV4" -> null
           - security_group_ids = [
-              - "enp09v4fqr0tk5peugkd",
+              - "XXXXXXXXXXXXXXXXXXXX",
             ] -> null
-          - subnet_id          = "e9b8u0t3q8vuu5okg6jc" -> null
+          - subnet_id          = "XXXXXXXXXXXXXXXXXXXX" -> null
         }
 
       - placement_policy {
@@ -2218,14 +2218,14 @@ Terraform will perform the following actions:
   # yandex_compute_instance.web[1] will be destroyed
   - resource "yandex_compute_instance" "web" {
       - created_at                = "2023-12-07T19:49:37Z" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - fqdn                      = "fhmio17ani7j1vn95tre.auto.internal" -> null
-      - id                        = "fhmio17ani7j1vn95tre" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - fqdn                      = "XXXXXXXXXXXXXXXXXXXX.auto.internal" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - metadata                  = {
           - "serial-port-enable" = "1"
           - "ssh-keys"           = <<-EOT
-                ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM
+                ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         } -> null
       - name                      = "web-2" -> null
@@ -2236,13 +2236,13 @@ Terraform will perform the following actions:
 
       - boot_disk {
           - auto_delete = true -> null
-          - device_name = "fhmp68kq9dtgftr05chg" -> null
-          - disk_id     = "fhmp68kq9dtgftr05chg" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
 
           - initialize_params {
               - block_size = 4096 -> null
-              - image_id   = "fd8idfolcq1l43h1mlft" -> null
+              - image_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
               - size       = 8 -> null
               - type       = "network-hdd" -> null
             }
@@ -2267,7 +2267,7 @@ Terraform will perform the following actions:
           - security_group_ids = [
               - "enp09v4fqr0tk5peugkd",
             ] -> null
-          - subnet_id          = "e9b8u0t3q8vuu5okg6jc" -> null
+          - subnet_id          = "XXXXXXXXXXXXXXXXXXXX" -> null
         }
 
       - placement_policy {
@@ -2289,9 +2289,9 @@ Terraform will perform the following actions:
   # yandex_vpc_network.develop will be destroyed
   - resource "yandex_vpc_network" "develop" {
       - created_at                = "2023-12-07T19:49:33Z" -> null
-      - default_security_group_id = "enp49f1f2p0nlipbdsuv" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - id                        = "enpau9d4fo1mjgga5hvv" -> null
+      - default_security_group_id = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - name                      = "develop" -> null
       - subnet_ids                = [
@@ -2302,17 +2302,17 @@ Terraform will perform the following actions:
   # yandex_vpc_security_group.example will be destroyed
   - resource "yandex_vpc_security_group" "example" {
       - created_at = "2023-12-07T19:49:36Z" -> null
-      - folder_id  = "b1gl6dqee4o5qromajnb" -> null
-      - id         = "enp09v4fqr0tk5peugkd" -> null
+      - folder_id  = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - id         = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels     = {} -> null
       - name       = "example_dynamic" -> null
-      - network_id = "enpau9d4fo1mjgga5hvv" -> null
+      - network_id = "XXXXXXXXXXXXXXXXXXXX" -> null
       - status     = "ACTIVE" -> null
 
       - egress {
           - description    = "разрешить весь исходящий трафик" -> null
           - from_port      = 0 -> null
-          - id             = "enps7gk3fmnhh4d20ste" -> null
+          - id             = "XXXXXXXXXXXXXXXXXXXX" -> null
           - labels         = {} -> null
           - port           = -1 -> null
           - protocol       = "TCP" -> null
@@ -2326,7 +2326,7 @@ Terraform will perform the following actions:
       - ingress {
           - description    = "разрешить входящий  http" -> null
           - from_port      = -1 -> null
-          - id             = "enp00jhdr116k817vq93" -> null
+          - id             = "XXXXXXXXXXXXXXXXXXXX" -> null
           - labels         = {} -> null
           - port           = 80 -> null
           - protocol       = "TCP" -> null
@@ -2339,7 +2339,7 @@ Terraform will perform the following actions:
       - ingress {
           - description    = "разрешить входящий https" -> null
           - from_port      = -1 -> null
-          - id             = "enph8lb5dfq21vod0cji" -> null
+          - id             = "XXXXXXXXXXXXXXXXXXXX" -> null
           - labels         = {} -> null
           - port           = 443 -> null
           - protocol       = "TCP" -> null
@@ -2352,7 +2352,7 @@ Terraform will perform the following actions:
       - ingress {
           - description    = "разрешить входящий ssh" -> null
           - from_port      = -1 -> null
-          - id             = "enp1o4sua0fdfo84vve0" -> null
+          - id             = "XXXXXXXXXXXXXXXXXXXX" -> null
           - labels         = {} -> null
           - port           = 22 -> null
           - protocol       = "TCP" -> null
@@ -2367,11 +2367,11 @@ Terraform will perform the following actions:
   # yandex_vpc_subnet.develop will be destroyed
   - resource "yandex_vpc_subnet" "develop" {
       - created_at     = "2023-12-07T19:49:35Z" -> null
-      - folder_id      = "b1gl6dqee4o5qromajnb" -> null
-      - id             = "e9b8u0t3q8vuu5okg6jc" -> null
+      - folder_id      = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - id             = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels         = {} -> null
       - name           = "develop" -> null
-      - network_id     = "enpau9d4fo1mjgga5hvv" -> null
+      - network_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
       - v4_cidr_blocks = [
           - "10.0.1.0/24",
         ] -> null
@@ -2384,28 +2384,28 @@ Plan: 0 to add, 0 to change, 13 to destroy.
 Changes to Outputs:
   - all_vms = [
       - {
-          - fqdn = "fhm9r4igbrkkrktnbf0c.auto.internal"
-          - id   = "fhm9r4igbrkkrktnbf0c"
+          - fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          - id   = "XXXXXXXXXXXXXXXXXXXX"
           - name = "web-1"
         },
       - {
-          - fqdn = "fhmio17ani7j1vn95tre.auto.internal"
-          - id   = "fhmio17ani7j1vn95tre"
+          - fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          - id   = "XXXXXXXXXXXXXXXXXXXX"
           - name = "web-2"
         },
       - {
-          - fqdn = "fhm9djq35fni90bajat4.auto.internal"
-          - id   = "fhm9djq35fni90bajat4"
+          - fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          - id   = "XXXXXXXXXXXXXXXXXXXX"
           - name = "storage"
         },
       - {
-          - fqdn = "fhmf9vqvbgngoot256ht.auto.internal"
-          - id   = "fhmf9vqvbgngoot256ht"
+          - fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          - id   = "XXXXXXXXXXXXXXXXXXXX"
           - name = "main"
         },
       - {
-          - fqdn = "fhm0g8v25vm9b22kbg95.auto.internal"
-          - id   = "fhm0g8v25vm9b22kbg95"
+          - fqdn = "XXXXXXXXXXXXXXXXXXXX.auto.internal"
+          - id   = "XXXXXXXXXXXXXXXXXXXX"
           - name = "replica"
         },
     ] -> null
@@ -2416,56 +2416,56 @@ Do you really want to destroy all resources?
 
   Enter a value: yes
 
-null_resource.web_hosts_provision: Destroying... [id=5177741461818192164]
+null_resource.web_hosts_provision: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
 null_resource.web_hosts_provision: Destruction complete after 0s
-local_file.hosts_cfg: Destroying... [id=08f3645e92f8d831bc11dcc785734560ba92e5dc]
+local_file.hosts_cfg: Destroying... [id=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]
 local_file.hosts_cfg: Destruction complete after 0s
-yandex_compute_instance.for_each["replica"]: Destroying... [id=fhm0g8v25vm9b22kbg95]
-yandex_compute_instance.for_each["main"]: Destroying... [id=fhmf9vqvbgngoot256ht]
-yandex_compute_instance.storage: Destroying... [id=fhm9djq35fni90bajat4]
-yandex_compute_instance.for_each["main"]: Still destroying... [id=fhmf9vqvbgngoot256ht, 10s elapsed]
-yandex_compute_instance.for_each["replica"]: Still destroying... [id=fhm0g8v25vm9b22kbg95, 10s elapsed]
-yandex_compute_instance.storage: Still destroying... [id=fhm9djq35fni90bajat4, 10s elapsed]
-yandex_compute_instance.for_each["main"]: Still destroying... [id=fhmf9vqvbgngoot256ht, 20s elapsed]
-yandex_compute_instance.for_each["replica"]: Still destroying... [id=fhm0g8v25vm9b22kbg95, 20s elapsed]
-yandex_compute_instance.storage: Still destroying... [id=fhm9djq35fni90bajat4, 20s elapsed]
-yandex_compute_instance.for_each["replica"]: Still destroying... [id=fhm0g8v25vm9b22kbg95, 30s elapsed]
-yandex_compute_instance.for_each["main"]: Still destroying... [id=fhmf9vqvbgngoot256ht, 30s elapsed]
-yandex_compute_instance.storage: Still destroying... [id=fhm9djq35fni90bajat4, 30s elapsed]
-yandex_compute_instance.for_each["main"]: Still destroying... [id=fhmf9vqvbgngoot256ht, 40s elapsed]
-yandex_compute_instance.for_each["replica"]: Still destroying... [id=fhm0g8v25vm9b22kbg95, 40s elapsed]
-yandex_compute_instance.storage: Still destroying... [id=fhm9djq35fni90bajat4, 40s elapsed]
+yandex_compute_instance.for_each["replica"]: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.for_each["main"]: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.storage: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.for_each["main"]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
+yandex_compute_instance.for_each["replica"]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
+yandex_compute_instance.storage: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
+yandex_compute_instance.for_each["main"]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 20s elapsed]
+yandex_compute_instance.for_each["replica"]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 20s elapsed]
+yandex_compute_instance.storage: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 20s elapsed]
+yandex_compute_instance.for_each["replica"]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 30s elapsed]
+yandex_compute_instance.for_each["main"]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 30s elapsed]
+yandex_compute_instance.storage: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 30s elapsed]
+yandex_compute_instance.for_each["main"]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 40s elapsed]
+yandex_compute_instance.for_each["replica"]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 40s elapsed]
+yandex_compute_instance.storage: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 40s elapsed]
 yandex_compute_instance.storage: Destruction complete after 41s
-yandex_compute_disk.disks[2]: Destroying... [id=fhmvquk162ll6lmu0bh0]
-yandex_compute_disk.disks[1]: Destroying... [id=fhmnq5q60kouq3s303q1]
-yandex_compute_disk.disks[0]: Destroying... [id=fhmr1gsragpme3ds471m]
+yandex_compute_disk.disks[2]: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[1]: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[0]: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_compute_instance.for_each["main"]: Destruction complete after 43s
 yandex_compute_instance.for_each["replica"]: Destruction complete after 49s
-yandex_compute_instance.web[1]: Destroying... [id=fhmio17ani7j1vn95tre]
-yandex_compute_instance.web[0]: Destroying... [id=fhm9r4igbrkkrktnbf0c]
-yandex_compute_disk.disks[1]: Still destroying... [id=fhmnq5q60kouq3s303q1, 10s elapsed]
-yandex_compute_disk.disks[0]: Still destroying... [id=fhmr1gsragpme3ds471m, 10s elapsed]
-yandex_compute_disk.disks[2]: Still destroying... [id=fhmvquk162ll6lmu0bh0, 10s elapsed]
+yandex_compute_instance.web[1]: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.web[0]: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_disk.disks[1]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
+yandex_compute_disk.disks[0]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
+yandex_compute_disk.disks[2]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
 yandex_compute_disk.disks[0]: Destruction complete after 12s
-yandex_compute_instance.web[1]: Still destroying... [id=fhmio17ani7j1vn95tre, 10s elapsed]
-yandex_compute_instance.web[0]: Still destroying... [id=fhm9r4igbrkkrktnbf0c, 10s elapsed]
+yandex_compute_instance.web[1]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
+yandex_compute_instance.web[0]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
 yandex_compute_disk.disks[1]: Destruction complete after 18s
 yandex_compute_disk.disks[2]: Destruction complete after 19s
-yandex_compute_instance.web[1]: Still destroying... [id=fhmio17ani7j1vn95tre, 20s elapsed]
-yandex_compute_instance.web[0]: Still destroying... [id=fhm9r4igbrkkrktnbf0c, 20s elapsed]
-yandex_compute_instance.web[0]: Still destroying... [id=fhm9r4igbrkkrktnbf0c, 30s elapsed]
-yandex_compute_instance.web[1]: Still destroying... [id=fhmio17ani7j1vn95tre, 30s elapsed]
-yandex_compute_instance.web[1]: Still destroying... [id=fhmio17ani7j1vn95tre, 40s elapsed]
-yandex_compute_instance.web[0]: Still destroying... [id=fhm9r4igbrkkrktnbf0c, 40s elapsed]
-yandex_compute_instance.web[0]: Still destroying... [id=fhm9r4igbrkkrktnbf0c, 50s elapsed]
-yandex_compute_instance.web[1]: Still destroying... [id=fhmio17ani7j1vn95tre, 50s elapsed]
+yandex_compute_instance.web[1]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 20s elapsed]
+yandex_compute_instance.web[0]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 20s elapsed]
+yandex_compute_instance.web[0]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 30s elapsed]
+yandex_compute_instance.web[1]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 30s elapsed]
+yandex_compute_instance.web[1]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 40s elapsed]
+yandex_compute_instance.web[0]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 40s elapsed]
+yandex_compute_instance.web[0]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 50s elapsed]
+yandex_compute_instance.web[1]: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 50s elapsed]
 yandex_compute_instance.web[1]: Destruction complete after 51s
 yandex_compute_instance.web[0]: Destruction complete after 52s
-yandex_vpc_subnet.develop: Destroying... [id=e9b8u0t3q8vuu5okg6jc]
-yandex_vpc_security_group.example: Destroying... [id=enp09v4fqr0tk5peugkd]
+yandex_vpc_subnet.develop: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_security_group.example: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_vpc_security_group.example: Destruction complete after 0s
 yandex_vpc_subnet.develop: Destruction complete after 2s
-yandex_vpc_network.develop: Destroying... [id=enpau9d4fo1mjgga5hvv]
+yandex_vpc_network.develop: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_vpc_network.develop: Destruction complete after 1s
 
 Destroy complete! Resources: 13 destroyed.
