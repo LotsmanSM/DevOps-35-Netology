@@ -177,7 +177,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                admn:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBl5/crtWIqG261tg/WA/bbDS3XWFJS8McPXaHDnrP6S LotsmanSM@mail.ru
+                admn:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "nat"
@@ -246,7 +246,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                admn:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBl5/crtWIqG261tg/WA/bbDS3XWFJS8McPXaHDnrP6S LotsmanSM@mail.ru
+                admn:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "private"
@@ -315,7 +315,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                admn:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBl5/crtWIqG261tg/WA/bbDS3XWFJS8McPXaHDnrP6S LotsmanSM@mail.ru
+                admn:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "public"
@@ -479,7 +479,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                admn:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBl5/crtWIqG261tg/WA/bbDS3XWFJS8McPXaHDnrP6S LotsmanSM@mail.ru
+                admn:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "nat"
@@ -548,7 +548,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                admn:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBl5/crtWIqG261tg/WA/bbDS3XWFJS8McPXaHDnrP6S LotsmanSM@mail.ru
+                admn:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "private"
@@ -617,7 +617,7 @@ Terraform will perform the following actions:
       + metadata                  = {
           + "serial-port-enable" = "1"
           + "ssh-keys"           = <<-EOT
-                admn:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBl5/crtWIqG261tg/WA/bbDS3XWFJS8McPXaHDnrP6S LotsmanSM@mail.ru
+                admn:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             EOT
         }
       + name                      = "public"
