@@ -63,22 +63,22 @@ docker node ls
 
 ```bash
 ╰─➤  yc vpc network create --name net --labels my-label=netology --description "my first network via yc"
-id: enpupd11cav54bqg5clp
-folder_id: b1gl6dqee4o5qromajnb
+id: XXXXXXXXXXXXXXXXXXXX
+folder_id: XXXXXXXXXXXXXXXXXXXX
 created_at: "2023-10-30T17:48:10Z"
 name: net
 description: my first network via yc
 labels:
   my-label: netology
-default_security_group_id: enp2k0ko9h0627souque
+default_security_group_id: XXXXXXXXXXXXXXXXXXXX
   
 ╰─➤  yc vpc subnet create --name my-subnet-a --zone ru-central1-a --range 10.1.2.0/24 --network-name net --description "my first subnet via yc"
-id: e9bfjui1713v5l5h38u6
-folder_id: b1gl6dqee4o5qromajnb
+id: XXXXXXXXXXXXXXXXXXXX
+folder_id: XXXXXXXXXXXXXXXXXXXX
 created_at: "2023-10-30T17:49:01Z"
 name: my-subnet-a
 description: my first subnet via yc
-network_id: enpupd11cav54bqg5clp
+network_id: XXXXXXXXXXXXXXXXXXXX
 zone_id: ru-central1-a
 v4_cidr_blocks:
   - 10.1.2.0/24
