@@ -65,7 +65,7 @@ labels:
 default_security_group_id: XXXXXXXXXXXXXXXXXXXX
 
 ╰─➤  yc vpc subnet create --name my-subnet-a --zone ru-central1-a --range 10.1.2.0/24 --network-name net --description "Subnet - netoligy"
-id: e9bgfimof3iib4j62i0f
+id: XXXXXXXXXXXXXXXXXXXX
 folder_id: XXXXXXXXXXXXXXXXXXXX
 created_at: "2023-10-27T15:13:25Z"
 name: my-subnet-a
