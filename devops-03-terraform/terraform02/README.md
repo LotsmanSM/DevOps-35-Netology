@@ -23,9 +23,9 @@
 ```bash
 ╰─➤terraform apply
 data.yandex_compute_image.ubuntu: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpq1aq1ggauq1g039qa]
-data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bq62i1bia2t2uifu0u]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -42,7 +42,7 @@ Terraform will perform the following actions:
       + id                        = (known after apply)
       + metadata                  = {
           + "serial-port-enable" = "1"
-          + "ssh-keys"           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM"
+          + "ssh-keys"           = "ubuntu:ssh-ed25519 AXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         }
       + name                      = "netology-develop-platform-web"
       + network_acceleration_type = "standard"
@@ -60,7 +60,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8b6qcrqbaqtnuumbph"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = (known after apply)
               + snapshot_id = (known after apply)
@@ -79,7 +79,7 @@ Terraform will perform the following actions:
           + nat_ip_address     = (known after apply)
           + nat_ip_version     = (known after apply)
           + security_group_ids = (known after apply)
-          + subnet_id          = "e9bq62i1bia2t2uifu0u"
+          + subnet_id          = "XXXXXXXXXXXXXXXXXXXX"
         }
 
       + resources {
@@ -115,10 +115,10 @@ yandex_compute_instance.platform: Creating...
 ```bash
 ╰─➤terraform apply
 data.yandex_compute_image.ubuntu: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpq1aq1ggauq1g039qa]
-data.yandex_compute_image.ubuntu: Read complete after 1s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bq62i1bia2t2uifu0u]
-yandex_compute_instance.platform: Refreshing state... [id=fhmtne4aqvup00bm6btl]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 Note: Objects have changed outside of Terraform
 
@@ -126,14 +126,14 @@ Terraform detected the following changes made outside of Terraform since the las
 
   # yandex_vpc_network.develop has been deleted
   - resource "yandex_vpc_network" "develop" {
-      - id                        = "enpq1aq1ggauq1g039qa" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
         name                      = "develop"
         # (5 unchanged attributes hidden)
     }
 
   # yandex_vpc_subnet.develop has been deleted
   - resource "yandex_vpc_subnet" "develop" {
-      - id             = "e9bq62i1bia2t2uifu0u" -> null
+      - id             = "XXXXXXXXXXXXXXXXXXXX" -> null
         name           = "develop"
         # (7 unchanged attributes hidden)
     }
@@ -158,7 +158,7 @@ Terraform will perform the following actions:
       + id                        = (known after apply)
       + metadata                  = {
           + "serial-port-enable" = "1"
-          + "ssh-keys"           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM"
+          + "ssh-keys"           = "ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         }
       + name                      = "netology-develop-platform-web"
       + network_acceleration_type = "standard"
@@ -176,7 +176,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8b6qcrqbaqtnuumbph"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = (known after apply)
               + snapshot_id = (known after apply)
@@ -344,10 +344,10 @@ variable "vm_web_core_fraction" {
 ```bash
 ╰─➤terraform plan
 data.yandex_compute_image.ubuntu: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpqsgphvb5n50cc7smi]
-data.yandex_compute_image.ubuntu: Read complete after 1s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bd2480si9a1cs6vlen]
-yandex_compute_instance.platform: Refreshing state... [id=fhmcft62o3tkj15ukuoq]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 No changes. Your infrastructure matches the configuration.
 
@@ -481,12 +481,12 @@ resource "yandex_compute_instance" "platform2" {
 ```bash
 ╰─➤terraform plan
 data.yandex_compute_image.ubuntu: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpqsgphvb5n50cc7smi]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 data.yandex_compute_image.ubuntu2: Reading...
-data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-data.yandex_compute_image.ubuntu2: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bd2480si9a1cs6vlen]
-yandex_compute_instance.platform: Refreshing state... [id=fhmcft62o3tkj15ukuoq]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu2: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -503,7 +503,7 @@ Terraform will perform the following actions:
       + id                        = (known after apply)
       + metadata                  = {
           + "serial-port-enable" = "1"
-          + "ssh-keys"           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM"
+          + "ssh-keys"           = "ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         }
       + name                      = "netology-develop-platform-db"
       + network_acceleration_type = "standard"
@@ -565,11 +565,11 @@ Note: You didn't use the -out option to save this plan, so Terraform can't guara
 ╰─➤terraform apply
 data.yandex_compute_image.ubuntu2: Reading...
 data.yandex_compute_image.ubuntu: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpqsgphvb5n50cc7smi]
-data.yandex_compute_image.ubuntu2: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bd2480si9a1cs6vlen]
-yandex_compute_instance.platform: Refreshing state... [id=fhmcft62o3tkj15ukuoq]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu2: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -586,7 +586,7 @@ Terraform will perform the following actions:
       + id                        = (known after apply)
       + metadata                  = {
           + "serial-port-enable" = "1"
-          + "ssh-keys"           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM"
+          + "ssh-keys"           = "ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         }
       + name                      = "netology-develop-platform-db"
       + network_acceleration_type = "standard"
@@ -604,7 +604,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd8b6qcrqbaqtnuumbph"
+              + image_id    = "XXXXXXXXXXXXXXXXXXXX"
               + name        = (known after apply)
               + size        = (known after apply)
               + snapshot_id = (known after apply)
@@ -623,7 +623,7 @@ Terraform will perform the following actions:
           + nat_ip_address     = (known after apply)
           + nat_ip_version     = (known after apply)
           + security_group_ids = (known after apply)
-          + subnet_id          = "e9bd2480si9a1cs6vlen"
+          + subnet_id          = "XXXXXXXXXXXXXXXXXXXX"
         }
 
       + resources {
@@ -728,13 +728,13 @@ name        = local.vm_db_instance_name
 ```bash
 ╰─➤terraform apply
 data.yandex_compute_image.ubuntu2: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpqsgphvb5n50cc7smi]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 data.yandex_compute_image.ubuntu: Reading...
-data.yandex_compute_image.ubuntu: Read complete after 1s [id=fd8b6qcrqbaqtnuumbph]
-data.yandex_compute_image.ubuntu2: Read complete after 1s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bd2480si9a1cs6vlen]
-yandex_compute_instance.platform2: Refreshing state... [id=fhm181a3pcuc20hrnboj]
-yandex_compute_instance.platform: Refreshing state... [id=fhmcft62o3tkj15ukuoq]
+data.yandex_compute_image.ubuntu: Read complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu2: Read complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform2: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 No changes. Your infrastructure matches the configuration.
 
@@ -812,7 +812,7 @@ variable "common_metadata" {
   type = map(string)
   default = {
     serial-port-enable = "1"
-    ssh-keys           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM"
+    ssh-keys           = "ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
   }
 }
 ```
@@ -844,12 +844,12 @@ resource "yandex_compute_instance" "platform2" {
 ╰─➤terraform plan
 data.yandex_compute_image.ubuntu: Reading...
 data.yandex_compute_image.ubuntu2: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpqsgphvb5n50cc7smi]
-data.yandex_compute_image.ubuntu2: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bd2480si9a1cs6vlen]
-yandex_compute_instance.platform: Refreshing state... [id=fhmcft62o3tkj15ukuoq]
-yandex_compute_instance.platform2: Refreshing state... [id=fhm181a3pcuc20hrnboj]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu2: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform2: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 No changes. Your infrastructure matches the configuration.
 
@@ -920,12 +920,12 @@ output "admin_server_info" {
 ╰─➤terraform apply
 data.yandex_compute_image.ubuntu2: Reading...
 data.yandex_compute_image.ubuntu: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpqsgphvb5n50cc7smi]
-data.yandex_compute_image.ubuntu2: Read complete after 1s [id=fd8b6qcrqbaqtnuumbph]
-data.yandex_compute_image.ubuntu: Read complete after 1s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bd2480si9a1cs6vlen]
-yandex_compute_instance.platform: Refreshing state... [id=fhmcft62o3tkj15ukuoq]
-yandex_compute_instance.platform2: Refreshing state... [id=fhm181a3pcuc20hrnboj]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu2: Read complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 1s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform2: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 Note: Objects have changed outside of Terraform
 
@@ -933,7 +933,7 @@ Terraform detected the following changes made outside of Terraform since the las
 
   # yandex_compute_instance.platform has changed
   ~ resource "yandex_compute_instance" "platform" {
-        id                        = "fhmcft62o3tkj15ukuoq"
+        id                        = "XXXXXXXXXXXXXXXXXXXX"
         name                      = "netology-develop-platform-web"
         # (9 unchanged attributes hidden)
 
@@ -947,7 +947,7 @@ Terraform detected the following changes made outside of Terraform since the las
 
   # yandex_compute_instance.platform2 has changed
   ~ resource "yandex_compute_instance" "platform2" {
-        id                        = "fhm181a3pcuc20hrnboj"
+        id                        = "XXXXXXXXXXXXXXXXXXXX"
         name                      = "netology-develop-platform-db"
         # (9 unchanged attributes hidden)
 
@@ -1016,12 +1016,12 @@ admin_server_info = "John is admin for production server based on OS ubuntu-20-0
 ╰─➤terraform destroy
 data.yandex_compute_image.ubuntu2: Reading...
 data.yandex_compute_image.ubuntu: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpqsgphvb5n50cc7smi]
-data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-data.yandex_compute_image.ubuntu2: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
-yandex_vpc_subnet.develop: Refreshing state... [id=e9bd2480si9a1cs6vlen]
-yandex_compute_instance.platform2: Refreshing state... [id=fhm181a3pcuc20hrnboj]
-yandex_compute_instance.platform: Refreshing state... [id=fhmcft62o3tkj15ukuoq]
+yandex_vpc_network.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+data.yandex_compute_image.ubuntu2: Read complete after 0s [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_vpc_subnet.develop: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform2: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Refreshing state... [id=XXXXXXXXXXXXXXXXXXXX]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   - destroy
@@ -1031,13 +1031,13 @@ Terraform will perform the following actions:
   # yandex_compute_instance.platform will be destroyed
   - resource "yandex_compute_instance" "platform" {
       - created_at                = "2023-12-02T17:41:22Z" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - fqdn                      = "fhmcft62o3tkj15ukuoq.auto.internal" -> null
-      - id                        = "fhmcft62o3tkj15ukuoq" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - fqdn                      = "XXXXXXXXXXXXXXXXXXXX.auto.internal" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - metadata                  = {
           - "serial-port-enable" = "1"
-          - "ssh-keys"           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM"
+          - "ssh-keys"           = "ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         } -> null
       - name                      = "netology-develop-platform-web" -> null
       - network_acceleration_type = "standard" -> null
@@ -1047,13 +1047,13 @@ Terraform will perform the following actions:
 
       - boot_disk {
           - auto_delete = true -> null
-          - device_name = "fhmgb8657msbfceg8d2h" -> null
-          - disk_id     = "fhmgb8657msbfceg8d2h" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
 
           - initialize_params {
               - block_size = 4096 -> null
-              - image_id   = "fd8b6qcrqbaqtnuumbph" -> null
+              - image_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
               - size       = 5 -> null
               - type       = "network-hdd" -> null
             }
@@ -1076,7 +1076,7 @@ Terraform will perform the following actions:
           - nat_ip_address     = "51.250.70.204" -> null
           - nat_ip_version     = "IPV4" -> null
           - security_group_ids = [] -> null
-          - subnet_id          = "e9bd2480si9a1cs6vlen" -> null
+          - subnet_id          = "XXXXXXXXXXXXXXXXXXXX" -> null
         }
 
       - placement_policy {
@@ -1098,13 +1098,13 @@ Terraform will perform the following actions:
   # yandex_compute_instance.platform2 will be destroyed
   - resource "yandex_compute_instance" "platform2" {
       - created_at                = "2023-12-02T19:55:00Z" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - fqdn                      = "fhm181a3pcuc20hrnboj.auto.internal" -> null
-      - id                        = "fhm181a3pcuc20hrnboj" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - fqdn                      = "XXXXXXXXXXXXXXXXXXXX.auto.internal" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - metadata                  = {
           - "serial-port-enable" = "1"
-          - "ssh-keys"           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGx0BIRbchvLjnwhoUWvcGgKEWFs2AgF8r8AjUvmvrTE serg@LotsmanSM"
+          - "ssh-keys"           = "ubuntu:ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         } -> null
       - name                      = "netology-develop-platform-db" -> null
       - network_acceleration_type = "standard" -> null
@@ -1114,13 +1114,13 @@ Terraform will perform the following actions:
 
       - boot_disk {
           - auto_delete = true -> null
-          - device_name = "fhm6nr8u3m20nbg2l6k0" -> null
-          - disk_id     = "fhm6nr8u3m20nbg2l6k0" -> null
+          - device_name = "XXXXXXXXXXXXXXXXXXXX" -> null
+          - disk_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
           - mode        = "READ_WRITE" -> null
 
           - initialize_params {
               - block_size = 4096 -> null
-              - image_id   = "fd8b6qcrqbaqtnuumbph" -> null
+              - image_id   = "XXXXXXXXXXXXXXXXXXXX" -> null
               - size       = 5 -> null
               - type       = "network-hdd" -> null
             }
@@ -1165,9 +1165,9 @@ Terraform will perform the following actions:
   # yandex_vpc_network.develop will be destroyed
   - resource "yandex_vpc_network" "develop" {
       - created_at                = "2023-12-02T17:41:19Z" -> null
-      - default_security_group_id = "enploh1tbhgltre8pf8g" -> null
-      - folder_id                 = "b1gl6dqee4o5qromajnb" -> null
-      - id                        = "enpqsgphvb5n50cc7smi" -> null
+      - default_security_group_id = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - folder_id                 = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - id                        = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels                    = {} -> null
       - name                      = "develop" -> null
       - subnet_ids                = [
@@ -1178,11 +1178,11 @@ Terraform will perform the following actions:
   # yandex_vpc_subnet.develop will be destroyed
   - resource "yandex_vpc_subnet" "develop" {
       - created_at     = "2023-12-02T17:41:21Z" -> null
-      - folder_id      = "b1gl6dqee4o5qromajnb" -> null
-      - id             = "e9bd2480si9a1cs6vlen" -> null
+      - folder_id      = "XXXXXXXXXXXXXXXXXXXX" -> null
+      - id             = "XXXXXXXXXXXXXXXXXXXX" -> null
       - labels         = {} -> null
       - name           = "develop" -> null
-      - network_id     = "enpqsgphvb5n50cc7smi" -> null
+      - network_id     = "XXXXXXXXXXXXXXXXXXXX" -> null
       - v4_cidr_blocks = [
           - "10.0.1.0/24",
         ] -> null
@@ -1207,21 +1207,21 @@ Do you really want to destroy all resources?
 
   Enter a value: yes
 
-yandex_compute_instance.platform: Destroying... [id=fhmcft62o3tkj15ukuoq]
-yandex_compute_instance.platform2: Destroying... [id=fhm181a3pcuc20hrnboj]
-yandex_compute_instance.platform: Still destroying... [id=fhmcft62o3tkj15ukuoq, 10s elapsed]
-yandex_compute_instance.platform2: Still destroying... [id=fhm181a3pcuc20hrnboj, 10s elapsed]
-yandex_compute_instance.platform: Still destroying... [id=fhmcft62o3tkj15ukuoq, 20s elapsed]
-yandex_compute_instance.platform2: Still destroying... [id=fhm181a3pcuc20hrnboj, 20s elapsed]
-yandex_compute_instance.platform: Still destroying... [id=fhmcft62o3tkj15ukuoq, 30s elapsed]
-yandex_compute_instance.platform2: Still destroying... [id=fhm181a3pcuc20hrnboj, 30s elapsed]
-yandex_compute_instance.platform: Still destroying... [id=fhmcft62o3tkj15ukuoq, 40s elapsed]
-yandex_compute_instance.platform2: Still destroying... [id=fhm181a3pcuc20hrnboj, 40s elapsed]
+yandex_compute_instance.platform: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform2: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
+yandex_compute_instance.platform: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
+yandex_compute_instance.platform2: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 10s elapsed]
+yandex_compute_instance.platform: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 20s elapsed]
+yandex_compute_instance.platform2: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 20s elapsed]
+yandex_compute_instance.platform: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 30s elapsed]
+yandex_compute_instance.platform2: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 30s elapsed]
+yandex_compute_instance.platform: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 40s elapsed]
+yandex_compute_instance.platform2: Still destroying... [id=XXXXXXXXXXXXXXXXXXXX, 40s elapsed]
 yandex_compute_instance.platform2: Destruction complete after 41s
 yandex_compute_instance.platform: Destruction complete after 43s
-yandex_vpc_subnet.develop: Destroying... [id=e9bd2480si9a1cs6vlen]
+yandex_vpc_subnet.develop: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_vpc_subnet.develop: Destruction complete after 3s
-yandex_vpc_network.develop: Destroying... [id=enpqsgphvb5n50cc7smi]
+yandex_vpc_network.develop: Destroying... [id=XXXXXXXXXXXXXXXXXXXX]
 yandex_vpc_network.develop: Destruction complete after 1s
 
 Destroy complete! Resources: 4 destroyed.
