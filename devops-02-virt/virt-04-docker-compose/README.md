@@ -48,7 +48,7 @@ Which zone do you want to use as a profile default?
 Please enter your numeric choice: 1
 Your profile default Compute zone has been set to 'ru-central1-a'.
 
-╰─➤  yc config list                                                                                                                                                                                   127 ↵
+╰─➤  yc config list
 token: y0_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 cloud-id: XXXXXXXXXXXXXXXXXXXX
 folder-id: XXXXXXXXXXXXXXXXXXXX
